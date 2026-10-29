@@ -8,7 +8,7 @@ def download_cloud_sequence():
         key_info = json.load(f)
     key = key_info['api_key']
 
-    job_id = "j_d686663a5c9a457e"
+    job_id = "j_acd007b4afda4fd1"
     print(f"Fetching artifacts for job {job_id}...")
 
     req = urllib.request.Request(
