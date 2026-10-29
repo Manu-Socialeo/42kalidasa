@@ -1,0 +1,48 @@
+{
+  "stage": 15,
+  "name": "Packaging and handoff",
+  "status": "PASSED",
+  "timestamp": "2026-10-29T21:44:30+05:30",
+  "deliverables": {
+    "website_source": "website/index.html",
+    "website_fallback_video": "website/camera_path_preview.mp4",
+    "website_sequence": "website/sequence/ (90 frames)",
+    "blender_project": "blender/kalidasa42_animated_v001.blend",
+    "scripts": "scripts/",
+    "docs_and_manifests": [
+      "docs/final_manifest.json",
+      "docs/asset_license_manifest.json",
+      "docs/architectural_source_register.json",
+      "docs/exterior_comparison_report.md",
+      "docs/reference_design_specification.md",
+      "docs/model_diagnosis_and_repair_plan.md",
+      "docs/camera_storyboard.md",
+      "docs/workspace_inventory_manifest.json"
+    ],
+    "reports": [
+      "reports/stage_01_report.json",
+      "reports/stage_02_report.json",
+      "reports/stage_03_report.json",
+      "reports/stage_04_report.json",
+      "reports/stage_05_report.json",
+      "reports/stage_06_report.json",
+      "reports/stage_07_report.json",
+      "reports/stage_08_report.json",
+      "reports/stage_09_report.json",
+      "reports/stage_10_report.json",
+      "reports/stage_11_report.json",
+      "reports/stage_12_report.json",
+      "reports/stage_13_report.json",
+      "reports/stage_14_qa_report.json",
+      "reports/stage_15_report.json"
+    ],
+    "readme": "README.md"
+  },
+  "acceptance_checks": {
+    "website_source_and_production_build_present": true,
+    "editable_blender_project_and_scripts_present": true,
+    "all_assets_referenced_and_licensed": true,
+    "readme_qa_report_source_register_and_manifest_exist": true
+  }
+}
+

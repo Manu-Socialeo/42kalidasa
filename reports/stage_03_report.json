@@ -1,0 +1,33 @@
+{
+  "stage": 3,
+  "name": "Reference video and image analysis",
+  "status": "passed",
+  "timestamp": "2026-10-29T15:59:40Z",
+  "video": {
+    "path": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\assets\\e0d6b7a65f18e4069106797c3a5e3736 (1).mov",
+    "resolution": "2556x1436",
+    "fps": 60.0,
+    "duration_seconds": 26.85,
+    "contact_sheet": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\renders\\preview\\reference_video_contact_sheet.jpg"
+  },
+  "photo": {
+    "photo_resolution": "1200x800",
+    "aspect_ratio": "3:2 (1200x800)",
+    "observed_camera_angle": "Three-quarter perspective from South-East corner driveway looking upward at ~15\u00b0 pitch",
+    "facade_color_relationships": {
+      "white_slab_edges": "Prominent, crisp horizontal white cantilever fascia profiles defining each floor slab",
+      "blue_balcony_bands": "Vibrant sky-blue / cyan tinted glass balustrades creating continuous horizontal rhythm along the curved projections",
+      "tan_vertical_accents": "Warm beige/terracotta vertical fluted piers providing vertical articulation across the Southern facade",
+      "dark_bronze_frames": "Champagne bronze / dark umber window frames and sliding doors",
+      "ground_entrance": "Double-height clear glazed portal with projecting canopy columns and paved vehicular turnaround",
+      "perimeter_landscaping": "Curated perimeter trees and lush greenery framing the lower plinth"
+    }
+  },
+  "acceptance_checks": {
+    "timestamped_contact_sheet_exists": true,
+    "reference_design_specification_exists": true,
+    "facts_distinguished_from_inferences": true,
+    "uncertain_features_marked_unknown": true
+  },
+  "issues": []
+}

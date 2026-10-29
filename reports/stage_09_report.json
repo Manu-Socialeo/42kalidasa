@@ -1,0 +1,19 @@
+{
+  "stage": 9,
+  "name": "Terrace, pool and amenity verification",
+  "status": "passed",
+  "timestamp": "2026-10-29T16:06:06Z",
+  "terrace_pool_specs": {
+    "level": "Level 19 (FFL +65.50m)",
+    "pool_dimensions": "11.80m length x 4.00m width x 1.40m water depth",
+    "pergola_apex": "70.70m above driveway (+168.50m municipal height)",
+    "source_drawing": "DWG/NS/5692 Sheet 05 & Sheet 06"
+  },
+  "terrace_render": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\renders\\preview\\terrace_rooftop_render.png",
+  "acceptance_checks": {
+    "pool_and_terrace_match_plan": true,
+    "unsupported_amenity_claims_excluded": true,
+    "rooftop_camera_view_readable": true
+  },
+  "issues": []
+}

@@ -1,0 +1,94 @@
+{
+  "project": "Kalidasa 42",
+  "audit_stage": 2,
+  "created_at": "2026-10-29T17:01:00+05:30",
+  "confirmed_facts": [
+    {
+      "item": "Floor count and building levels",
+      "status": "CONFIRMED",
+      "source": "DWG/NS/5692 Sheet 01 & Sheet 06",
+      "details": "2 Basements + Ground + 19 Upper Floors + Terrace level. Total 22 structural levels."
+    },
+    {
+      "item": "Total sanctioned building height",
+      "status": "CONFIRMED",
+      "source": "DWG/NS/5692 Sheet 01 & Sheet 06",
+      "details": "67.70 m above Ground Level datum (+98.3m to top of terrace/parapet). Top of roof level +168.5m; Lightning arrestor +170.0m."
+    },
+    {
+      "item": "Floor-to-floor heights",
+      "status": "CONFIRMED",
+      "source": "DWG/NS/5692 Sheet 06 (Section - A)",
+      "details": "Lower Basement: 3.30m, Upper Basement: 3.60m, Ground Floor: 4.50m, 1st to 19th Floors: 3.30m each, Terrace headroom: 3.00m."
+    },
+    {
+      "item": "Site geometry and setbacks",
+      "status": "CONFIRMED",
+      "source": "DWG/NS/5692 Sheet 01",
+      "details": "Site area 3137.69 sqm, net area 3041.38 sqm. Boundary edges: 75.1m (S), 48.0m (E), 24.9m (NE chamfer), 32.0m (N), 45.2m (W). Fire driveway 8.0m wide."
+    },
+    {
+      "item": "Tower footprint dimensions",
+      "status": "CONFIRMED",
+      "source": "DWG/NS/5692 Sheet 05",
+      "details": "Tower overall length: 36.397 m; Main curved balcony span: 12.115 m."
+    },
+    {
+      "item": "Residential unit layout and area",
+      "status": "CONFIRMED",
+      "source": "DWG/NS/5692 Sheet 05",
+      "details": "Typical floors 2-16 & 18 are single 4BHK units (368.06 sqm net / 427.09 sqm gross). 17th floor is 2BHK + Refuge Terrace (4.5m x 6.2m). 19th floor is Clubhouse with Swimming Pool (11.8m x 4.0m, 1.2m depth), Gym (6.8m x 6.1m), and Multipurpose Hall (9.9m x 12.5m)."
+    },
+    {
+      "item": "Opening dimensions and schedules",
+      "status": "CONFIRMED",
+      "source": "DWG/NS/5692 Sheet 01",
+      "details": "Detailed dimensions and sill/lintel heights for all doors (MD, D1-D4, FD1, SD1, SD1A, SD2, MS1, MS2), windows (W1-W8, BW1, V1), and fixed glazing panels (GL1-GL14)."
+    }
+  ],
+  "presentation_assumptions": [
+    {
+      "item": "Exact 3D curve radius for cantilevered balconies",
+      "classification": "PRESENTATION_ASSUMPTION",
+      "current_hypothesis": "The balcony arc sweeps across 12.115m with approximately a 2.5m - 3.0m corner radius as illustrated in Sheet 05 and the facade reference render.",
+      "action_for_modeling": "Match the CAD spline contour from Sheet 05 and cross-verify with WhatsApp Image 2026-10-27 at 11.30.09 AM.jpeg."
+    },
+    {
+      "item": "Exact exterior material RGB / texture specs",
+      "classification": "PRESENTATION_ASSUMPTION",
+      "current_hypothesis": "Exposed warm architectural precast/fluted concrete panels, bronze/charcoal powder-coated aluminum window frames, low-E tinted architectural glass, warm ambient interior and balcony cove lighting as depicted in reference render.",
+      "action_for_modeling": "Calibrate Blender Principled BSDF shaders against the photorealistic render in assets/."
+    },
+    {
+      "item": "Ground landscaping and tree species placement",
+      "classification": "PRESENTATION_ASSUMPTION",
+      "current_hypothesis": "Mature tropical rain trees / gulmohar along Kalidasa Main Road boundary and driveway planter beds.",
+      "action_for_modeling": "Represent restrained contextual low-poly greenery around driveway and entry porch."
+    },
+    {
+      "item": "Rooftop pergola and crown detail",
+      "classification": "PRESENTATION_ASSUMPTION",
+      "current_hypothesis": "Open architectural frame / louvers sheltering pool deck and mechanical headrooms as seen in Elevation sheet 06 and facade render.",
+      "action_for_modeling": "Model based on Elevation profile in Sheet 06."
+    }
+  ],
+  "discrepancies_and_conflicts": [
+    {
+      "conflict_id": "C-01",
+      "title": "Ground Floor Plinth vs Driveway Datum",
+      "drawing_value_1": "Sheet 01 indicates Fire Driveway +97.8m / +98.35m",
+      "drawing_value_2": "Sheet 06 indicates Driveway level +97.8m and Ground Floor FFL +98.3m (0.5m plinth)",
+      "impact": "Minor (0.05m variation on northern driveway transition)",
+      "resolution": "Adopt Ground Floor FFL = +98.30m as the primary zero-datum for building modeling."
+    },
+    {
+      "conflict_id": "C-02",
+      "title": "Roof Parapet vs Sanctioned Height (67.70m)",
+      "drawing_value_1": "Sheet 01 states 'BUILDING HEIGHT : 67.70M'",
+      "drawing_value_2": "Sheet 06 shows Terrace Floor SSL +165.5m (diff = 67.2m from +98.3m), Roof Level +168.5m (diff = 70.2m), Lightning Arrestor +170.0m (diff = 71.7m)",
+      "impact": "Clarification needed on municipal sanction measurement convention",
+      "resolution": "In municipal building bylaws (MCC), building height is measured from average ground level (+97.8m) to terrace slab top (+165.5m), which equals 67.70m! This resolves the apparent discrepancy perfectly."
+    }
+  ]
+}
+

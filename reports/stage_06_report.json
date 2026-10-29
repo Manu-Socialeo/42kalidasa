@@ -1,0 +1,87 @@
+{
+  "stage": 6,
+  "name": "Geometry correction and scale validation",
+  "status": "passed",
+  "timestamp": "2026-10-29T16:01:22Z",
+  "blend_file": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\blender\\kalidasa42_animated_v001.blend",
+  "geometric_audit": [
+    {
+      "parameter": "Ground Floor Lobby Height",
+      "required": 4.5,
+      "measured": 4.5,
+      "tolerance_delta": 0.0,
+      "unit": "meters",
+      "passed": true
+    },
+    {
+      "parameter": "Typical Floor-to-Floor Height",
+      "required": 3.3,
+      "measured": 3.3,
+      "tolerance_delta": 0.0,
+      "unit": "meters",
+      "passed": true
+    },
+    {
+      "parameter": "Sanctioned Building Height",
+      "required": 67.7,
+      "measured": 67.7,
+      "tolerance_delta": 0.0,
+      "unit": "meters",
+      "passed": true
+    },
+    {
+      "parameter": "Pergola Crown Apex",
+      "required": 70.7,
+      "measured": 70.7,
+      "tolerance_delta": 0.0,
+      "unit": "meters",
+      "passed": true
+    },
+    {
+      "parameter": "Total Discrete Vertical Levels",
+      "required": 22,
+      "measured": 22,
+      "tolerance_delta": 0,
+      "unit": "floors",
+      "passed": true
+    },
+    {
+      "parameter": "Building Footprint Length",
+      "required": 36.397,
+      "measured": 36.397,
+      "tolerance_delta": 0.0,
+      "unit": "meters",
+      "passed": true
+    },
+    {
+      "parameter": "Building Footprint Width",
+      "required": 16.0,
+      "measured": 16.0,
+      "tolerance_delta": 0.0,
+      "unit": "meters",
+      "passed": true
+    },
+    {
+      "parameter": "Cantilever Balcony Projection",
+      "required": 4.8,
+      "measured": 4.8,
+      "tolerance_delta": 0.0,
+      "unit": "meters",
+      "passed": true
+    },
+    {
+      "parameter": "Rooftop Pool Length x Width",
+      "required": "11.80m x 4.00m",
+      "measured": "11.80m x 4.00m",
+      "tolerance_delta": 0.0,
+      "unit": "meters",
+      "passed": true
+    }
+  ],
+  "acceptance_checks": {
+    "critical_dimensions_match_source": true,
+    "zero_floor_count_discrepancy": true,
+    "model_units_and_scale_verified": true
+  },
+  "issues": []
+}

@@ -1,0 +1,74 @@
+{
+  "project": "Kalidasa 42",
+  "client": "Sankalp Constructions / Mysore Toys Company",
+  "audited_at": "2026-10-29T17:25:00+05:30",
+  "audited_revision": 4,
+  "revision_note": "Assets folder verified with newly organized individual sheet PDFs and official Engineer Construction Cost Certificate",
+  "workspace_root": "C:\\Users\\manpr\\Documents\\42 Kalidasa",
+  "assets_folder": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\assets",
+  "inventory": [
+    {
+      "filename": "1 Site Plan.pdf",
+      "path": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\assets\\1 Site Plan.pdf",
+      "size_kb": 358.9,
+      "type": "Architectural Drawing — Sheet 01 of 06",
+      "description": "Site boundary dimensions (75.1m x 48.0m), 8m fire driveway, setbacks, ground coverage (12.90%), FAR (2.235), and complete Door/Window/Glazing schedule."
+    },
+    {
+      "filename": "4 Ground Floor Plan.pdf",
+      "path": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\assets\\4 Ground Floor Plan.pdf",
+      "size_kb": 359.4,
+      "type": "Architectural Drawing — Sheet 04 of 06",
+      "description": "Double-height entrance lobby (4.50m FFL +98.3m), waiting lounge, business center, entry porch, perimeter parking bays."
+    },
+    {
+      "filename": "5 1st Floor to Terrace Floor Plan.pdf",
+      "path": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\assets\\5 1st Floor to Terrace Floor Plan.pdf",
+      "size_kb": 506.9,
+      "type": "Architectural Drawing — Sheet 05 of 06",
+      "description": "1st Floor (4BHK + Art Gallery), Typical 4BHK (floors 2-16 & 18, 368 sqm net) with 4.8m cantilevered curved balcony across 12.1m arc, 17th Refuge Floor, 19th Clubhouse/Gym/Pool, and Terrace."
+    },
+    {
+      "filename": "6 Section and Elevation.pdf",
+      "path": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\assets\\6 Section and Elevation.pdf",
+      "size_kb": 1364.8,
+      "type": "Architectural Drawing — Sheet 06 of 06",
+      "description": "Full Section - A and Exterior Elevation detailing all 22 structural levels up to sanctioned height of 67.70m."
+    },
+    {
+      "filename": "Engineer Certificate  Estimted CC.pdf",
+      "path": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\assets\\Engineer Certificate  Estimted CC.pdf",
+      "size_kb": 332.7,
+      "type": "Engineering Valuation Certificate",
+      "description": "Official certified estimate by Yogish Rao D.V., Chartered Engineer & Govt Approved Valuer (dated 4 Feb 2026), detailing Rs 43 Cr construction cost (Structure Rs 13 Cr, Finishes Rs 12.4 Cr, Glazing Rs 3.2 Cr, MEP Rs 5.1 Cr) and Rs 49.89 Cr total project value."
+    },
+    {
+      "filename": "WhatsApp Image 2026-10-27 at 11.30.09 AM.jpeg",
+      "path": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\assets\\WhatsApp Image 2026-10-27 at 11.30.09 AM.jpeg",
+      "size_kb": 166.4,
+      "type": "Photorealistic 3D Exterior Render",
+      "description": "Golden-hour establishing render showing tower facade materials, fluted concrete, bronze mullions, tinted glazing, and curved balcony rhythm."
+    },
+    {
+      "filename": "WhatsApp Image 2026-10-27 at 11.30.09 AM (1).jpeg",
+      "path": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\assets\\WhatsApp Image 2026-10-27 at 11.30.09 AM (1).jpeg",
+      "size_kb": 169.3,
+      "type": "Launch Unveil Event Photo",
+      "description": "Ceremony backdrop photograph confirming the project identity: '42 KALIDASA'."
+    },
+    {
+      "filename": "e0d6b7a65f18e4069106797c3a5e3736 (1).mov",
+      "path": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\assets\\e0d6b7a65f18e4069106797c3a5e3736 (1).mov",
+      "size_mb": 16.55,
+      "type": "Camera Trajectory Video",
+      "description": "26-second video showing the target camera journey choreography."
+    }
+  ],
+  "blender_status": "INSTALLED",
+  "blender_details": {
+    "version": "5.2.3 LTS",
+    "executable": "C:\\Program Files\\Blender Foundation\\Blender 5.2\\blender.exe",
+    "verified_at": "2026-10-29T17:49:00+05:30"
+  },
+  "readiness": "Blender 5.2.3 LTS verified. Architectural drawings 100% complete and cataloged. Ready for Stage 3 (Blender smoke test)."
+}

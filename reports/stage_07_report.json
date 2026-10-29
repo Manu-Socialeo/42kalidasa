@@ -1,0 +1,18 @@
+{
+  "stage": 7,
+  "name": "Exterior materials and photorealism",
+  "status": "passed",
+  "timestamp": "2026-10-29T16:03:45Z",
+  "reference_photo": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\assets\\WhatsApp Image 2026-10-27 at 11.30.09 AM.jpeg",
+  "calibrated_render": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\renders\\preview\\exterior_photo_match_render.png",
+  "side_by_side_sheet": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\renders\\preview\\exterior_comparison_side_by_side.png",
+  "comparison_report_path": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\docs\\exterior_comparison_report.md",
+  "acceptance_checks": {
+    "side_by_side_comparison_sheet_exists": true,
+    "no_untextured_placeholder_objects": true,
+    "main_facade_colors_and_balconies_correspond": true,
+    "image_and_project_files_verified": true,
+    "remaining_differences_honestly_documented": true
+  },
+  "issues": []
+}

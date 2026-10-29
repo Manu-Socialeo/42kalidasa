@@ -1,0 +1,30 @@
+{
+  "stage": 11,
+  "name": "Final render and asset optimisation",
+  "status": "passed",
+  "timestamp": "2026-10-29T16:07:13Z",
+  "sequence_summary": {
+    "total_frames_verified": 90,
+    "corrupt_frames": 0,
+    "resolution": [
+      960,
+      540
+    ],
+    "total_size_mb": 51.13,
+    "average_frame_kb": 581.7
+  },
+  "web_mp4_preview": {
+    "path": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\renders\\preview\\camera_path_preview.mp4",
+    "size_kb": 919.8,
+    "fps": 24.0,
+    "total_frames": 180,
+    "duration_seconds": 7.5
+  },
+  "acceptance_checks": {
+    "all_expected_frames_exist": true,
+    "video_decodable_start_to_finish": true,
+    "no_missing_assets_or_temporal_artefacts": true,
+    "master_and_derivative_recorded_in_manifest": true
+  },
+  "issues": []
+}

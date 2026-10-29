@@ -1,0 +1,64 @@
+{
+  "stage": 12,
+  "name": "Website reconstruction",
+  "status": "PASSED",
+  "timestamp": "2026-10-29T21:42:00+05:30",
+  "deliverables": {
+    "html_file": "website/index.html",
+    "server_url": "http://localhost:3000",
+    "specification_reference": "docs/reference_design_specification.md"
+  },
+  "sections_verified": [
+    {
+      "id": "step-0",
+      "title": "Mysuru's Defining Vertical Estate",
+      "meta": "01 • Municipal Sanction DWG/NS/5692",
+      "stats": ["67.70 M Sanctioned Height", "2B + G + 19 Vertical Floors"]
+    },
+    {
+      "id": "step-1",
+      "title": "Rhythmic Cantilevered Balconies",
+      "meta": "02 • Sculptural Geometry",
+      "stats": ["4.80 M Cantilever Projection", "12.11 M Curved Balcony Arc"]
+    },
+    {
+      "id": "step-2",
+      "title": "The Horizon Sky Lounge & Lap Pool",
+      "meta": "03 • Level 19 & Rooftop",
+      "stats": ["11.8 × 4.0 M Lap Pool Dimensions", "+65.50 M Elevated Pool FFL"]
+    },
+    {
+      "id": "step-3",
+      "title": "Seamless Outdoor Living",
+      "meta": "04 • Floor 08 Private Deck",
+      "stats": ["3.30 M Floor-to-Floor", "SD1 Sliding Portal"]
+    },
+    {
+      "id": "step-4",
+      "title": "Grand Living & Dining Suite",
+      "meta": "05 • Representative Residence",
+      "stats": ["368.06 M² Net 4BHK Residence", "3.05 M Clear Ceiling"]
+    },
+    {
+      "id": "blueprint-modal",
+      "title": "Official Engineering Specifications Dialog",
+      "meta": "MUNICIPAL ARCHITECTURAL SANCTION",
+      "specs": [
+        "Site Dimensions: 75.10m × 48.00m",
+        "Plot Area / Coverage: 3,604.8 m² (12.90%)",
+        "Floor Area Ratio (FAR): 2.235 Sanctioned",
+        "Total Certified Valuation: ₹ 49.89 Crores",
+        "Structural Construction Cost: ₹ 43.00 Crores",
+        "Fire Driveway Setback: 8.00m Clear Perimeter"
+      ]
+    }
+  ],
+  "acceptance_checks": {
+    "all_sections_present": true,
+    "typography_aligned": true,
+    "no_broken_assets": true,
+    "reduced_motion_fallback": true,
+    "keyboard_accessible": true
+  }
+}
+

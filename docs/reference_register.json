@@ -1,0 +1,188 @@
+{
+  "project": "Kalidasa 42",
+  "client": "Sankalp Constructions / Mysore Toys Company",
+  "audited_at": "2026-10-29T17:00:00+05:30",
+  "source_documents": [
+    {
+      "file": "Sectional Drawing of the apartments.pdf",
+      "drawing_no": "DWG / NS / 5692",
+      "sheets": "01 OF 06 to 06 OF 06",
+      "scale": "1:100",
+      "architect": "Urban Frame Pvt Ltd (Anup Naik, Sankalpa, Cunningham Road, Bangalore)",
+      "engineer": "N. Sridhara B.E. (Civil), Gokulam 3rd Stage, Mysuru",
+      "permit_reference": "MYS-LBPAS-32617/25-26/BP",
+      "approval_date": "2025-12-09"
+    },
+    {
+      "file": "Site Plan.pdf",
+      "drawing_no": "DWG / NS / 5692 (Sheet 01 OF 06)",
+      "scale": "1:100"
+    },
+    {
+      "file": "WhatsApp Image 2026-10-27 at 11.30.09 AM.jpeg",
+      "description": "Photorealistic 3D exterior render showing facade materials, curved balcony profiles, and lighting"
+    },
+    {
+      "file": "WhatsApp Image 2026-10-27 at 11.30.09 AM (1).jpeg",
+      "description": "Launch ceremony banner confirming project name '42 KALIDASA' and identical tower design"
+    },
+    {
+      "file": "e0d6b7a65f18e4069106797c3a5e3736 (1).mov",
+      "description": "26-second reference video demonstrating camera trajectory"
+    }
+  ],
+  "site_parameters": {
+    "site_area_sqm": 3137.69,
+    "road_widening_area_sqm": 96.31,
+    "net_site_area_sqm": 3041.38,
+    "ground_coverage": {
+      "ground_floor_footprint_sqm": 404.81,
+      "coverage_percentage": 12.90,
+      "permissible_percentage": 60.0
+    },
+    "floor_area_ratio": {
+      "total_far_area_sqm": 7012.08,
+      "proposed_far": 2.235,
+      "permissible_far": 2.25
+    },
+    "boundary_dimensions_meters": {
+      "south_5th_cross_road_12m_wide": 75.1,
+      "east_kalidasa_main_road_20m_widening_to_24m": 48.0,
+      "northeast_chamfer_11th_cross_road": 24.9,
+      "north_private_site": 32.0,
+      "west_private_site": 45.2
+    },
+    "setbacks_meters": {
+      "front_east": 16.0,
+      "south": 16.0,
+      "north": 9.0,
+      "west_rear": 8.0,
+      "fire_driveway_width": 8.0,
+      "basement_setback": 3.0
+    },
+    "datum_levels_meters": {
+      "road_level": 97.5,
+      "fire_driveway": 97.8,
+      "ground_floor_ffl": 98.3,
+      "plinth_height_above_driveway": 0.5
+    }
+  },
+  "building_structure": {
+    "configuration": "2 Basements + Ground + 19 Upper Floors + Terrace (2B+G+19)",
+    "total_units": 19,
+    "total_building_height_meters": 67.70,
+    "top_of_roof_level_meters": 168.50,
+    "lightning_arrestor_level_meters": 170.00,
+    "vertical_levels_meters": [
+      { "level_name": "Lower Basement (B2)", "ffl": 91.40, "height": 3.30, "function": "Parking (23 cars), Drivers toilet, Sump, STP" },
+      { "level_name": "Upper Basement (B1)", "ffl": 94.70, "height": 3.60, "function": "Parking (19 cars), Pump room, Electrical & Net shafts" },
+      { "level_name": "Ground Floor", "ffl": 98.30, "height": 4.50, "function": "Grand Reception, Business Center, Waiting Lounge, Fire Control, Porch, 26 Parking bays" },
+      { "level_name": "First Floor", "ffl": 102.80, "height": 3.30, "function": "Residential Unit 1 (4BHK with Art Gallery, 349.34 sqm net)" },
+      { "level_name": "Second Floor", "ffl": 106.10, "height": 3.30, "function": "Residential Unit 2 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Third Floor", "ffl": 109.40, "height": 3.30, "function": "Residential Unit 3 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Fourth Floor", "ffl": 112.70, "height": 3.30, "function": "Residential Unit 4 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Fifth Floor", "ffl": 116.00, "height": 3.30, "function": "Residential Unit 5 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Sixth Floor", "ffl": 119.30, "height": 3.30, "function": "Residential Unit 6 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Seventh Floor", "ffl": 122.60, "height": 3.30, "function": "Residential Unit 7 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Eighth Floor", "ffl": 125.90, "height": 3.30, "function": "Residential Unit 8 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Ninth Floor", "ffl": 129.20, "height": 3.30, "function": "Residential Unit 9 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Tenth Floor", "ffl": 132.50, "height": 3.30, "function": "Residential Unit 10 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Eleventh Floor", "ffl": 135.80, "height": 3.30, "function": "Residential Unit 11 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Twelfth Floor", "ffl": 139.10, "height": 3.30, "function": "Residential Unit 12 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Thirteenth Floor", "ffl": 142.40, "height": 3.30, "function": "Residential Unit 13 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Fourteenth Floor", "ffl": 145.70, "height": 3.30, "function": "Residential Unit 14 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Fifteenth Floor", "ffl": 149.00, "height": 3.30, "function": "Residential Unit 15 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Sixteenth Floor", "ffl": 152.30, "height": 3.30, "function": "Residential Unit 16 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Seventeenth Floor", "ffl": 155.60, "height": 3.30, "function": "Residential Unit 17 (2BHK, 356.40 sqm net) + Refuge Terrace (4.5m x 6.2m)" },
+      { "level_name": "Eighteenth Floor", "ffl": 158.90, "height": 3.30, "function": "Residential Unit 18 (Typical 4BHK, 368.06 sqm net)" },
+      { "level_name": "Nineteenth Floor", "ffl": 162.20, "height": 3.30, "function": "Clubhouse: Multipurpose Hall (9.9x12.5m), Gym (6.8x6.1m), Swimming Pool (11.8x4.0m, deck @ +163.4m)" },
+      { "level_name": "Terrace Floor", "ssl": 165.50, "height": 3.00, "function": "Open Terrace, Pool cutout view, Lift and Stair Headrooms" }
+    ]
+  },
+  "building_footprint_dimensions_meters": {
+    "total_length": 36.397,
+    "width_main_body": 16.00,
+    "balcony_cantilever_projection": 4.80,
+    "balcony_curve_length": 12.115
+  },
+  "typical_apartment_layout": {
+    "level": "2nd to 16th, 18th Floor",
+    "type": "Full-Floor 4BHK Luxury Apartment",
+    "gross_area_sqm": 427.09,
+    "net_area_sqm": 368.06,
+    "spaces": {
+      "living_dining": { "dimensions_meters": "8.5 x 6.2", "features": "Full-height sliding doors to grand balcony" },
+      "grand_balcony": { "dimensions_meters": "4.8 x 7.0 (curved cantilever)", "features": "Curved corner glass balustrade" },
+      "informal_living": { "dimensions_meters": "4.0 x 5.8" },
+      "master_bedroom": { "dimensions_meters": "5.0 x 4.0", "wiw": "3.1 x 1.8", "toilet": "4.0 x 1.8", "balcony": "2.1 x 5.2" },
+      "bedroom_2": { "dimensions_meters": "4.1 x 4.4", "toilet": "1.6 x 2.8", "balcony": "5.4 x 2.4" },
+      "bedroom_3": { "dimensions_meters": "4.0 x 4.4", "toilet": "1.6 x 2.8" },
+      "bedroom_4": { "dimensions_meters": "3.7 x 4.4", "toilet": "1.5 x 2.8" },
+      "kitchen": { "dimensions_meters": "3.6 x 6.4", "utility_drying": "4.4 x 3.9" },
+      "maid_room": { "dimensions_meters": "1.7 x 2.2", "attached_toilet": true },
+      "foyer": { "dimensions_meters": "1.5 x 2.4" },
+      "puja": { "dimensions_meters": "1.6 x 1.5" },
+      "store": { "dimensions_meters": "1.5 x 2.5" }
+    },
+    "circulation_core": {
+      "lifts": [
+        { "type": "Fire / Service Lift", "capacity": "15 Passenger", "shaft_dimensions_meters": "2.3 x 2.7" },
+        { "type": "Passenger Lift 1", "capacity": "10 Passenger", "shaft_dimensions_meters": "1.9 x 2.5" },
+        { "type": "Passenger Lift 2", "capacity": "10 Passenger", "shaft_dimensions_meters": "1.9 x 2.5" }
+      ],
+      "staircases": [
+        { "name": "ST-01 (Main)", "dimensions_meters": "2.9 x 5.2", "width_meters": 1.2, "risers": 22, "riser_height_m": 0.15, "tread_depth_m": 0.30 },
+        { "name": "ST-02 (Fire Exit)", "dimensions_meters": "2.9 x 4.9", "width_meters": 1.2, "risers": 22, "riser_height_m": 0.15, "tread_depth_m": 0.30 }
+      ],
+      "lift_lobby": { "dimensions_meters": "5.6 x 2.5" }
+    }
+  },
+  "openings_schedule": {
+    "doors": [
+      { "code": "MD", "type": "Wooden Main Door", "width_mm": 1200, "height_mm": 2400 },
+      { "code": "D1", "type": "Wooden Door", "width_mm": 1000, "height_mm": 2400 },
+      { "code": "D2", "type": "Wooden Door", "width_mm": 900, "height_mm": 2400 },
+      { "code": "D3", "type": "Wooden Door (Toilet/Store)", "width_mm": 800, "height_mm": 2400 },
+      { "code": "D4", "type": "Wooden Door", "width_mm": 750, "height_mm": 2400 },
+      { "code": "FD1", "type": "Fire Door", "width_mm": 1200, "height_mm": 2400 },
+      { "code": "SD1", "type": "Sliding Glass Door (Living)", "width_mm": 3400, "height_mm": 2400 },
+      { "code": "SD1A", "type": "Sliding Glass Door", "width_mm": 2930, "height_mm": 2400 },
+      { "code": "SD2", "type": "Sliding Glass Door (Bedrooms)", "width_mm": 2400, "height_mm": 2400 },
+      { "code": "MS1", "type": "Metal Door", "width_mm": 1000, "height_mm": 2400 },
+      { "code": "MS2", "type": "Metal Door", "width_mm": 850, "height_mm": 2400 }
+    ],
+    "windows": [
+      { "code": "W1", "type": "Sliding Window", "width_mm": 1500, "height_mm": 1500, "sill_mm": 900, "lintel_mm": 2400 },
+      { "code": "W1A", "type": "Sliding Window", "width_mm": 1200, "height_mm": 1500, "sill_mm": 900, "lintel_mm": 2400 },
+      { "code": "W1B", "type": "Sliding Window", "width_mm": 900, "height_mm": 1500, "sill_mm": 900, "lintel_mm": 2400 },
+      { "code": "W2", "type": "Sliding Window", "width_mm": 2925, "height_mm": 1200, "sill_mm": 1200, "lintel_mm": 2400 },
+      { "code": "W3", "type": "Sliding Window", "width_mm": 900, "height_mm": 1500, "sill_mm": 900, "lintel_mm": 2400 },
+      { "code": "W4", "type": "Sliding Window", "width_mm": 3000, "height_mm": 1500, "sill_mm": 900, "lintel_mm": 2400 },
+      { "code": "W5", "type": "Sliding Window", "width_mm": 2400, "height_mm": 1500, "sill_mm": 900, "lintel_mm": 2400 },
+      { "code": "W6", "type": "Sliding Window", "width_mm": 2150, "height_mm": 1500, "sill_mm": 900, "lintel_mm": 2400 },
+      { "code": "W7", "type": "Casement Window", "width_mm": 600, "height_mm": 1500, "sill_mm": 900, "lintel_mm": 2400 },
+      { "code": "W8", "type": "Casement Window", "width_mm": 850, "height_mm": 1500, "sill_mm": 900, "lintel_mm": 2400 },
+      { "code": "BW1", "type": "Bay Window", "width_mm": 1800, "height_mm": 1950, "sill_mm": 450, "lintel_mm": 2400 },
+      { "code": "V1", "type": "Ventilator Louvers", "width_mm": 600, "height_mm": 600, "sill_mm": 1800, "lintel_mm": 2400 }
+    ],
+    "glazing_curtain_wall": [
+      { "code": "GL1", "type": "Fixed Glass", "width_mm": 1600, "height_mm": 2400 },
+      { "code": "GL2", "type": "Fixed Glass", "width_mm": 2350, "height_mm": 2400 },
+      { "code": "GL3", "type": "Fixed Glass", "width_mm": 6400, "height_mm": 2400 },
+      { "code": "GL4", "type": "Fixed Glass (Living)", "width_mm": 1800, "height_mm": 2400 },
+      { "code": "GL4A", "type": "Fixed Glass", "width_mm": 4100, "height_mm": 2400 },
+      { "code": "GL4B", "type": "Fixed Glass", "width_mm": 3025, "height_mm": 2400 },
+      { "code": "GL5", "type": "Fixed Glass", "width_mm": 4100, "height_mm": 2650 },
+      { "code": "GL6", "type": "Fixed Glass", "width_mm": 2825, "height_mm": 2350 },
+      { "code": "GL7", "type": "Fixed Glass", "width_mm": 2150, "height_mm": 3400 },
+      { "code": "GL8", "type": "Fixed Glass", "width_mm": 3300, "height_mm": 2350 },
+      { "code": "GL9", "type": "Fixed Glass", "width_mm": 2925, "height_mm": 2350 },
+      { "code": "GL10", "type": "Fixed Glass (Lobby)", "width_mm": 2200, "height_mm": 2400 },
+      { "code": "GL11", "type": "Fixed Glass", "width_mm": 3900, "height_mm": 2400 },
+      { "code": "GL12", "type": "Fixed Glass (Terrace)", "width_mm": 1800, "height_mm": 2400 },
+      { "code": "GL13", "type": "Fixed Glass (MPH)", "width_mm": 1915, "height_mm": 2400 },
+      { "code": "GL14", "type": "Fixed Glass (Gym)", "width_mm": 6000, "height_mm": 2400 }
+    ]
+  }
+}
+

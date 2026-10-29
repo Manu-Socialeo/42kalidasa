@@ -1,0 +1,82 @@
+{
+  "project": "Kalidasa 42",
+  "client": "Sankalp Constructions / Mysore Toys Company",
+  "license_manifest_version": "1.0.0",
+  "created_at": "2026-10-29T21:44:00+05:30",
+  "assets": [
+    {
+      "asset_category": "Architectural Drawings & Sanctions",
+      "files": [
+        "plans/DWG-NS-5692-Sheet-01.pdf",
+        "plans/DWG-NS-5692-Sheet-02.pdf",
+        "plans/DWG-NS-5692-Sheet-03.pdf",
+        "plans/DWG-NS-5692-Sheet-04.pdf",
+        "plans/DWG-NS-5692-Sheet-05.pdf",
+        "plans/DWG-NS-5692-Sheet-06.pdf"
+      ],
+      "origin": "Municipal Corporation of Mysuru / Sankalp Constructions",
+      "license": "Proprietary / Client Confidential Architectural Sanction DWG / NS / 5692",
+      "usage_rights": "Authorized for 3D reconstruction, architectural modeling, and project visualization"
+    },
+    {
+      "asset_category": "Client Valuation & Engineering Certificates",
+      "files": [
+        "plans/Valuation Report.pdf"
+      ],
+      "origin": "Approved Consulting Civil Engineer & Valuer",
+      "license": "Proprietary / Client Confidential",
+      "usage_rights": "Authorized for factual specification verification (₹49.89 Cr valuation, ₹43.00 Cr structural cost)"
+    },
+    {
+      "asset_category": "Visual Reference Photography",
+      "files": [
+        "assets/WhatsApp Image 2026-10-27 at 11.30.09 AM.jpeg"
+      ],
+      "origin": "Client Site Survey & Approved Photographic Target",
+      "license": "Proprietary / Client Approved Visual Reference",
+      "usage_rights": "Highest priority exterior visual ground truth for facade geometry, balcony tints, and material calibration"
+    },
+    {
+      "asset_category": "Motion & Art Direction Reference Video",
+      "files": [
+        "assets/e0d6b7a65f18e4069106797c3a5e3736 (1).mov"
+      ],
+      "origin": "Benchmark Luxury Architectural Walkthrough Reference",
+      "license": "Reference / Style Benchmark Only",
+      "usage_rights": "Style, pacing, typography, HUD card layout, and camera trajectory benchmark"
+    },
+    {
+      "asset_category": "Typography & Web Fonts",
+      "files": [
+        "Google Fonts: Cinzel (Serif, weights 400, 600, 700)",
+        "Google Fonts: Plus Jakarta Sans (Sans-serif, weights 300, 400, 500, 600, 700)"
+      ],
+      "origin": "Google Fonts repository",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "usage_rights": "Permitted for commercial and non-commercial digital web distribution"
+    },
+    {
+      "asset_category": "3D Models & Procedural Shaders",
+      "files": [
+        "blender/kalidasa42_animated_v001.blend",
+        "blender/kalidasa42_master_v001.blend"
+      ],
+      "origin": "Bespoke procedural modeling & architectural synthesis created for 42 Kalidasa",
+      "license": "Proprietary / Project Deliverable",
+      "usage_rights": "Full perpetual commercial license granted to project stakeholders"
+    },
+    {
+      "asset_category": "Rendered Frames & Video Assets",
+      "files": [
+        "renders/final/frame_0001.png to frame_0090.png",
+        "website/sequence/frame_0001.png to frame_0090.png",
+        "renders/preview/camera_path_preview.mp4",
+        "website/camera_path_preview.mp4"
+      ],
+      "origin": "Generated from Blender 5.2.3 LTS procedural scene",
+      "license": "Proprietary / Project Deliverable",
+      "usage_rights": "Full web and digital media distribution rights"
+    }
+  ]
+}
+

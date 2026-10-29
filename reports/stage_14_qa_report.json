@@ -1,0 +1,101 @@
+{
+  "stage": 14,
+  "name": "Quality assurance and performance",
+  "status": "PASSED",
+  "timestamp": "2026-10-29T21:44:00+05:30",
+  "automated_checks": {
+    "all_90_frames_valid": true,
+    "sequence_frame_count": 90,
+    "video_fallback_exists": true,
+    "http_server_endpoints": {
+      "/": {
+        "status": 200,
+        "content_length": "30917"
+      },
+      "/index.html": {
+        "status": 200,
+        "content_length": "30917"
+      },
+      "/camera_path_preview.mp4": {
+        "status": 200,
+        "content_length": "941856"
+      },
+      "/sequence/frame_0001.png": {
+        "status": 200,
+        "content_length": "638172"
+      },
+      "/sequence/frame_0090.png": {
+        "status": 200,
+        "content_length": "540700"
+      }
+    },
+    "http_server_healthy": true,
+    "accessibility_and_standards": {
+      "viewport_meta": true,
+      "cinzel_font_loaded": true,
+      "jakarta_font_loaded": true,
+      "aria_modal_dialogs": true,
+      "preloader_progressbar": true,
+      "prefers_reduced_motion": true,
+      "keyboard_listeners": true,
+      "mobile_responsive_rules": true
+    }
+  },
+  "visual_judgement_checks": {
+    "exterior_reference_photo_match": {
+      "status": "PASSED (Side-by-side confirmed)",
+      "curved_balconies_matched": "True. Curved laminated cyan/sky-blue glass balustrades match photo.",
+      "slab_edges_matched": "True. Pure white crisp horizontal slab edges match photo.",
+      "vertical_piers_matched": "True. Warm sandstone/beige vertical piers match photo.",
+      "side_by_side_sheet": "renders/preview/exterior_comparison_side_by_side.png",
+      "detailed_comparison_report": "docs/exterior_comparison_report.md"
+    },
+    "interior_living_render": {
+      "status": "PASSED",
+      "evidence": "renders/preview/interior_living_render.png"
+    },
+    "terrace_rooftop_render": {
+      "status": "PASSED",
+      "evidence": "renders/preview/terrace_rooftop_render.png"
+    },
+    "reference_video_typography_match": {
+      "status": "PASSED",
+      "font_hierarchy": "Cinzel serif headings + Plus Jakarta Sans body/stats",
+      "color_palette": "Bronze gold (#c5a880), deep charcoal (#0a0c0f), warm accents"
+    }
+  },
+  "fact_checking": {
+    "dwg_number_cited": true,
+    "building_height_67_70m": true,
+    "floor_count_2b_g_19": true,
+    "balcony_cantilever_4_8m": true,
+    "balcony_arc_12_11m": true,
+    "pool_dimensions_11_8_by_4m": true,
+    "residence_area_368m2": true,
+    "valuation_cr_49_89": true,
+    "construction_cost_cr_43": true,
+    "unsupported_amenities_invented": false
+  },
+  "performance_metrics": {
+    "sequence_total_mb": 51.13,
+    "average_frame_kb": 581.75,
+    "video_fallback_kb": 919.78
+  },
+  "known_limitations": [
+    {
+      "item": "GPU Hardware Rendering",
+      "description": "Intel Core i5-10210U with NVIDIA GeForce MX250 (sm_60 Pascal architecture). Blender 5.2.3 LTS no longer compiles sm_60 OptiX/CUDA kernels; rendering is executed with 100% stability on Cycles CPU raytracing with OpenImageDenoise."
+    },
+    {
+      "item": "Total Sequence Memory Footprint",
+      "description": "Preloading 90 full-resolution 960x540 PNG frames requires ~51 MB of network transfer. A progressive preloader with percentage readout and a 941 KB MP4 video fallback ensure reliable accessibility across mobile and slow network connections."
+    }
+  ],
+  "acceptance_checks": {
+    "production_build_succeeds": true,
+    "no_critical_console_errors_or_broken_assets": true,
+    "core_navigation_and_fallback_work": true,
+    "qa_report_distinguishes_automated_from_visual": true,
+    "overall_evaluation": "PASSED"
+  }
+}

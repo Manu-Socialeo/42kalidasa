@@ -1,0 +1,26 @@
+{
+  "stage": 8,
+  "name": "Interior design and modelling",
+  "status": "passed",
+  "timestamp": "2026-10-29T16:05:03Z",
+  "representative_unit": {
+    "floor": "Floor 08 (Z_FFL = +27.60m)",
+    "layout_source": "DWG/NS/5692 Sheet 05 (Typical 4BHK)",
+    "net_area": "368.06 m\u00b2 (3,962 sq.ft)",
+    "clear_ceiling_height": "3.05 m"
+  },
+  "interior_collections_found": [
+    "09_Apartment_Interior_L08",
+    "10_Living_Dining_Furniture",
+    "11_Interior_Lighting"
+  ],
+  "interior_staged_objects": 22,
+  "interior_render": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\renders\\preview\\interior_living_render.png",
+  "acceptance_checks": {
+    "layout_follows_floor_plan": true,
+    "materials_and_furniture_present": true,
+    "no_camera_through_wall_clipping": true,
+    "proposed_finishes_labeled_as_design_assumptions": true
+  },
+  "issues": []
+}

@@ -1,0 +1,2599 @@
+{
+  "project": "Kalidasa 42",
+  "workspace_root": "C:\\Users\\manpr\\Documents\\42 Kalidasa",
+  "audit_timestamp": "2026-10-29T15:57:39Z",
+  "total_files_audited": 370,
+  "backup_path": "C:\\Users\\manpr\\Documents\\42 Kalidasa\\backups\\pre_master_pipeline_20261029_212738",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 159,
+      "size_kb": 0.16,
+      "modified_iso": "2026-10-29T15:18:33Z",
+      "extension": ""
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 5183,
+      "size_kb": 5.06,
+      "modified_iso": "2026-10-29T15:18:33Z",
+      "extension": ".md"
+    },
+    {
+      "path": "assets\\1 Site Plan.pdf",
+      "size_bytes": 367504,
+      "size_kb": 358.89,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".pdf"
+    },
+    {
+      "path": "assets\\4 Ground Floor Plan.pdf",
+      "size_bytes": 368028,
+      "size_kb": 359.4,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".pdf"
+    },
+    {
+      "path": "assets\\5 1st Floor to Terrace Floor Plan.pdf",
+      "size_bytes": 519089,
+      "size_kb": 506.92,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".pdf"
+    },
+    {
+      "path": "assets\\6 Section and Elevation.pdf",
+      "size_bytes": 1397600,
+      "size_kb": 1364.84,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".pdf"
+    },
+    {
+      "path": "assets\\e0d6b7a65f18e4069106797c3a5e3736 (1).mov",
+      "size_bytes": 17349330,
+      "size_kb": 16942.71,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".mov"
+    },
+    {
+      "path": "assets\\Engineer Certificate  Estimted CC.pdf",
+      "size_bytes": 340687,
+      "size_kb": 332.7,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".pdf"
+    },
+    {
+      "path": "assets\\WhatsApp Image 2026-10-27 at 11.30.09 AM (1).jpeg",
+      "size_bytes": 173313,
+      "size_kb": 169.25,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".jpeg"
+    },
+    {
+      "path": "assets\\WhatsApp Image 2026-10-27 at 11.30.09 AM.jpeg",
+      "size_bytes": 170350,
+      "size_kb": 166.36,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".jpeg"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\docs\\architectural_unknowns.json",
+      "size_bytes": 5138,
+      "size_kb": 5.02,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".json"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\docs\\asset_register.json",
+      "size_bytes": 4167,
+      "size_kb": 4.07,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".json"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\docs\\camera_path_notes.md",
+      "size_bytes": 3606,
+      "size_kb": 3.52,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".md"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\docs\\final_test_report.md",
+      "size_bytes": 6788,
+      "size_kb": 6.63,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".md"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\docs\\how_to_regenerate.md",
+      "size_bytes": 4910,
+      "size_kb": 4.79,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".md"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\docs\\massing_validation.md",
+      "size_bytes": 3759,
+      "size_kb": 3.67,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".md"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\docs\\reference_audit.md",
+      "size_bytes": 7711,
+      "size_kb": 7.53,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".md"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\docs\\reference_register.json",
+      "size_bytes": 12228,
+      "size_kb": 11.94,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".json"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\docs\\render_manifest.json",
+      "size_bytes": 22499,
+      "size_kb": 21.97,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".json"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\docs\\stage_log.md",
+      "size_bytes": 25060,
+      "size_kb": 24.47,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".md"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\scripts\\animate_camera.py",
+      "size_bytes": 11002,
+      "size_kb": 10.74,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\scripts\\blender_smoke_test.py",
+      "size_bytes": 4249,
+      "size_kb": 4.15,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\scripts\\build_facade.py",
+      "size_bytes": 20294,
+      "size_kb": 19.82,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\scripts\\build_interior.py",
+      "size_bytes": 14879,
+      "size_kb": 14.53,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\scripts\\build_massing.py",
+      "size_bytes": 17103,
+      "size_kb": 16.7,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\scripts\\compile_video.py",
+      "size_bytes": 1426,
+      "size_kb": 1.39,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\scripts\\interior_build.log",
+      "size_bytes": 601,
+      "size_kb": 0.59,
+      "modified_iso": "2026-10-29T13:36:16Z",
+      "extension": ".log"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\scripts\\render_final_sequence.py",
+      "size_bytes": 5168,
+      "size_kb": 5.05,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\scripts\\render_interior_review.py",
+      "size_bytes": 1340,
+      "size_kb": 1.31,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\scripts\\test_interior_render.py",
+      "size_bytes": 871,
+      "size_kb": 0.85,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\scripts\\validate_massing.py",
+      "size_bytes": 4243,
+      "size_kb": 4.14,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\website\\index.html",
+      "size_bytes": 25409,
+      "size_kb": 24.81,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".html"
+    },
+    {
+      "path": "backups\\pre_master_pipeline_20261029_212738\\website\\package.json",
+      "size_bytes": 396,
+      "size_kb": 0.39,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".json"
+    },
+    {
+      "path": "backups\\website_v001\\index.html",
+      "size_bytes": 25407,
+      "size_kb": 24.81,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".html"
+    },
+    {
+      "path": "backups\\website_v001\\package.json",
+      "size_bytes": 394,
+      "size_kb": 0.38,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".json"
+    },
+    {
+      "path": "blender\\kalidasa42_animated_v001.blend",
+      "size_bytes": 211145,
+      "size_kb": 206.2,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".blend"
+    },
+    {
+      "path": "blender\\kalidasa42_facade_v001.blend",
+      "size_bytes": 187051,
+      "size_kb": 182.67,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".blend"
+    },
+    {
+      "path": "blender\\kalidasa42_facade_v001.blend1",
+      "size_bytes": 186645,
+      "size_kb": 182.27,
+      "modified_iso": "2026-10-29T13:11:39Z",
+      "extension": ".blend1"
+    },
+    {
+      "path": "blender\\kalidasa42_interior_v001.blend",
+      "size_bytes": 208967,
+      "size_kb": 204.07,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".blend"
+    },
+    {
+      "path": "blender\\kalidasa42_interior_v001.blend1",
+      "size_bytes": 208982,
+      "size_kb": 204.08,
+      "modified_iso": "2026-10-29T13:34:45Z",
+      "extension": ".blend1"
+    },
+    {
+      "path": "blender\\kalidasa42_massing_v001.blend",
+      "size_bytes": 128944,
+      "size_kb": 125.92,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".blend"
+    },
+    {
+      "path": "blender\\smoke_test.blend",
+      "size_bytes": 90132,
+      "size_kb": 88.02,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".blend"
+    },
+    {
+      "path": "docs\\architectural_unknowns.json",
+      "size_bytes": 5138,
+      "size_kb": 5.02,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".json"
+    },
+    {
+      "path": "docs\\asset_register.json",
+      "size_bytes": 4167,
+      "size_kb": 4.07,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".json"
+    },
+    {
+      "path": "docs\\camera_path_notes.md",
+      "size_bytes": 3606,
+      "size_kb": 3.52,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".md"
+    },
+    {
+      "path": "docs\\final_test_report.md",
+      "size_bytes": 6788,
+      "size_kb": 6.63,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".md"
+    },
+    {
+      "path": "docs\\how_to_regenerate.md",
+      "size_bytes": 4910,
+      "size_kb": 4.79,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".md"
+    },
+    {
+      "path": "docs\\massing_validation.md",
+      "size_bytes": 3759,
+      "size_kb": 3.67,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".md"
+    },
+    {
+      "path": "docs\\reference_audit.md",
+      "size_bytes": 7711,
+      "size_kb": 7.53,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".md"
+    },
+    {
+      "path": "docs\\reference_register.json",
+      "size_bytes": 12228,
+      "size_kb": 11.94,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".json"
+    },
+    {
+      "path": "docs\\render_manifest.json",
+      "size_bytes": 22499,
+      "size_kb": 21.97,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".json"
+    },
+    {
+      "path": "docs\\stage_log.md",
+      "size_bytes": 25060,
+      "size_kb": 24.47,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".md"
+    },
+    {
+      "path": "plans\\Sectional Drawing of the apartments.pdf",
+      "size_bytes": 3314671,
+      "size_kb": 3236.98,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".pdf"
+    },
+    {
+      "path": "plans\\Site Plan.pdf",
+      "size_bytes": 367504,
+      "size_kb": 358.89,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".pdf"
+    },
+    {
+      "path": "references\\e0d6b7a65f18e4069106797c3a5e3736 (1).mov",
+      "size_bytes": 17349330,
+      "size_kb": 16942.71,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".mov"
+    },
+    {
+      "path": "references\\Engineer Certificate  Estimted CC.pdf",
+      "size_bytes": 340687,
+      "size_kb": 332.7,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".pdf"
+    },
+    {
+      "path": "references\\img1_preview.jpg",
+      "size_bytes": 115762,
+      "size_kb": 113.05,
+      "modified_iso": "2026-10-29T15:56:48Z",
+      "extension": ".jpg"
+    },
+    {
+      "path": "references\\img2_bot.jpg",
+      "size_bytes": 110676,
+      "size_kb": 108.08,
+      "modified_iso": "2026-10-29T15:56:01Z",
+      "extension": ".jpg"
+    },
+    {
+      "path": "references\\img2_mid.jpg",
+      "size_bytes": 135493,
+      "size_kb": 132.32,
+      "modified_iso": "2026-10-29T15:56:01Z",
+      "extension": ".jpg"
+    },
+    {
+      "path": "references\\img2_preview.jpg",
+      "size_bytes": 151839,
+      "size_kb": 148.28,
+      "modified_iso": "2026-10-29T15:56:48Z",
+      "extension": ".jpg"
+    },
+    {
+      "path": "references\\img2_top.jpg",
+      "size_bytes": 131682,
+      "size_kb": 128.6,
+      "modified_iso": "2026-10-29T15:56:01Z",
+      "extension": ".jpg"
+    },
+    {
+      "path": "references\\WhatsApp Image 2026-10-27 at 11.30.09 AM (1).jpeg",
+      "size_bytes": 173313,
+      "size_kb": 169.25,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".jpeg"
+    },
+    {
+      "path": "references\\WhatsApp Image 2026-10-27 at 11.30.09 AM.jpeg",
+      "size_bytes": 170350,
+      "size_kb": 166.36,
+      "modified_iso": "2026-10-29T15:17:19Z",
+      "extension": ".jpeg"
+    },
+    {
+      "path": "renders\\final\\frame_0001.png",
+      "size_bytes": 638172,
+      "size_kb": 623.21,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0002.png",
+      "size_bytes": 638340,
+      "size_kb": 623.38,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0003.png",
+      "size_bytes": 637444,
+      "size_kb": 622.5,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0004.png",
+      "size_bytes": 637453,
+      "size_kb": 622.51,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0005.png",
+      "size_bytes": 636641,
+      "size_kb": 621.72,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0006.png",
+      "size_bytes": 637360,
+      "size_kb": 622.42,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0007.png",
+      "size_bytes": 636948,
+      "size_kb": 622.02,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0008.png",
+      "size_bytes": 635894,
+      "size_kb": 620.99,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0009.png",
+      "size_bytes": 635501,
+      "size_kb": 620.61,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0010.png",
+      "size_bytes": 634113,
+      "size_kb": 619.25,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0011.png",
+      "size_bytes": 634592,
+      "size_kb": 619.72,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0012.png",
+      "size_bytes": 632879,
+      "size_kb": 618.05,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0013.png",
+      "size_bytes": 631643,
+      "size_kb": 616.84,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0014.png",
+      "size_bytes": 630092,
+      "size_kb": 615.32,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0015.png",
+      "size_bytes": 629126,
+      "size_kb": 614.38,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0016.png",
+      "size_bytes": 627070,
+      "size_kb": 612.37,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0017.png",
+      "size_bytes": 626942,
+      "size_kb": 612.25,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0018.png",
+      "size_bytes": 627314,
+      "size_kb": 612.61,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0019.png",
+      "size_bytes": 625474,
+      "size_kb": 610.81,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0020.png",
+      "size_bytes": 625160,
+      "size_kb": 610.51,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0021.png",
+      "size_bytes": 624675,
+      "size_kb": 610.03,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0022.png",
+      "size_bytes": 622877,
+      "size_kb": 608.28,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0023.png",
+      "size_bytes": 621782,
+      "size_kb": 607.21,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0024.png",
+      "size_bytes": 619724,
+      "size_kb": 605.2,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0025.png",
+      "size_bytes": 619014,
+      "size_kb": 604.51,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0026.png",
+      "size_bytes": 614917,
+      "size_kb": 600.5,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0027.png",
+      "size_bytes": 613783,
+      "size_kb": 599.4,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0028.png",
+      "size_bytes": 611213,
+      "size_kb": 596.89,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0029.png",
+      "size_bytes": 607999,
+      "size_kb": 593.75,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0030.png",
+      "size_bytes": 604304,
+      "size_kb": 590.14,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0031.png",
+      "size_bytes": 603666,
+      "size_kb": 589.52,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0032.png",
+      "size_bytes": 608033,
+      "size_kb": 593.78,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0033.png",
+      "size_bytes": 612228,
+      "size_kb": 597.88,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0034.png",
+      "size_bytes": 615852,
+      "size_kb": 601.42,
+      "modified_iso": "2026-10-29T15:17:20Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0035.png",
+      "size_bytes": 619952,
+      "size_kb": 605.42,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0036.png",
+      "size_bytes": 621387,
+      "size_kb": 606.82,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0037.png",
+      "size_bytes": 622642,
+      "size_kb": 608.05,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0038.png",
+      "size_bytes": 623255,
+      "size_kb": 608.65,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0039.png",
+      "size_bytes": 624597,
+      "size_kb": 609.96,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0040.png",
+      "size_bytes": 624097,
+      "size_kb": 609.47,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0041.png",
+      "size_bytes": 625574,
+      "size_kb": 610.91,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0042.png",
+      "size_bytes": 626056,
+      "size_kb": 611.38,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0043.png",
+      "size_bytes": 626337,
+      "size_kb": 611.66,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0044.png",
+      "size_bytes": 627375,
+      "size_kb": 612.67,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0045.png",
+      "size_bytes": 627714,
+      "size_kb": 613.0,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0046.png",
+      "size_bytes": 625478,
+      "size_kb": 610.82,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0047.png",
+      "size_bytes": 620166,
+      "size_kb": 605.63,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0048.png",
+      "size_bytes": 614929,
+      "size_kb": 600.52,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0049.png",
+      "size_bytes": 606249,
+      "size_kb": 592.04,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0050.png",
+      "size_bytes": 597573,
+      "size_kb": 583.57,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0051.png",
+      "size_bytes": 588875,
+      "size_kb": 575.07,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0052.png",
+      "size_bytes": 583817,
+      "size_kb": 570.13,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0053.png",
+      "size_bytes": 580333,
+      "size_kb": 566.73,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0054.png",
+      "size_bytes": 579489,
+      "size_kb": 565.91,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0055.png",
+      "size_bytes": 575067,
+      "size_kb": 561.59,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0056.png",
+      "size_bytes": 570079,
+      "size_kb": 556.72,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0057.png",
+      "size_bytes": 564540,
+      "size_kb": 551.31,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0058.png",
+      "size_bytes": 559411,
+      "size_kb": 546.3,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0059.png",
+      "size_bytes": 554262,
+      "size_kb": 541.27,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0060.png",
+      "size_bytes": 547443,
+      "size_kb": 534.61,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0061.png",
+      "size_bytes": 542440,
+      "size_kb": 529.73,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0062.png",
+      "size_bytes": 535756,
+      "size_kb": 523.2,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0063.png",
+      "size_bytes": 542817,
+      "size_kb": 530.09,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0064.png",
+      "size_bytes": 552244,
+      "size_kb": 539.3,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0065.png",
+      "size_bytes": 565925,
+      "size_kb": 552.66,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0066.png",
+      "size_bytes": 576289,
+      "size_kb": 562.78,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0067.png",
+      "size_bytes": 585423,
+      "size_kb": 571.7,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0068.png",
+      "size_bytes": 603806,
+      "size_kb": 589.65,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0069.png",
+      "size_bytes": 620128,
+      "size_kb": 605.59,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0070.png",
+      "size_bytes": 622737,
+      "size_kb": 608.14,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0071.png",
+      "size_bytes": 622701,
+      "size_kb": 608.11,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0072.png",
+      "size_bytes": 621532,
+      "size_kb": 606.96,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0073.png",
+      "size_bytes": 613200,
+      "size_kb": 598.83,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0074.png",
+      "size_bytes": 601034,
+      "size_kb": 586.95,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0075.png",
+      "size_bytes": 590434,
+      "size_kb": 576.6,
+      "modified_iso": "2026-10-29T15:17:21Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0076.png",
+      "size_bytes": 586651,
+      "size_kb": 572.9,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0077.png",
+      "size_bytes": 573756,
+      "size_kb": 560.31,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0078.png",
+      "size_bytes": 553748,
+      "size_kb": 540.77,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0079.png",
+      "size_bytes": 566879,
+      "size_kb": 553.59,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0080.png",
+      "size_bytes": 567285,
+      "size_kb": 553.99,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0081.png",
+      "size_bytes": 563374,
+      "size_kb": 550.17,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0082.png",
+      "size_bytes": 559771,
+      "size_kb": 546.65,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0083.png",
+      "size_bytes": 555154,
+      "size_kb": 542.14,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0084.png",
+      "size_bytes": 556296,
+      "size_kb": 543.26,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0085.png",
+      "size_bytes": 548576,
+      "size_kb": 535.72,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0086.png",
+      "size_bytes": 525883,
+      "size_kb": 513.56,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0087.png",
+      "size_bytes": 119694,
+      "size_kb": 116.89,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0088.png",
+      "size_bytes": 559520,
+      "size_kb": 546.41,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0089.png",
+      "size_bytes": 545242,
+      "size_kb": 532.46,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\final\\frame_0090.png",
+      "size_bytes": 540700,
+      "size_kb": 528.03,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\benchmark_test.png",
+      "size_bytes": 929632,
+      "size_kb": 907.84,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\camera_path_preview.mp4",
+      "size_bytes": 941856,
+      "size_kb": 919.78,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".mp4"
+    },
+    {
+      "path": "renders\\preview\\facade_review.png",
+      "size_bytes": 2167074,
+      "size_kb": 2116.28,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\interior_review.png",
+      "size_bytes": 2042810,
+      "size_kb": 1994.93,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\massing_aerial.png",
+      "size_bytes": 543482,
+      "size_kb": 530.74,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\massing_front.png",
+      "size_bytes": 554418,
+      "size_kb": 541.42,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\massing_left.png",
+      "size_bytes": 210541,
+      "size_kb": 205.61,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\massing_rear.png",
+      "size_bytes": 210541,
+      "size_kb": 205.61,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\massing_right.png",
+      "size_bytes": 411703,
+      "size_kb": 402.05,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\massing_v001_preview.png",
+      "size_bytes": 572250,
+      "size_kb": 558.84,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\milestone_1_exterior_establishing.png",
+      "size_bytes": 1085800,
+      "size_kb": 1060.35,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\milestone_2_orbital_climb.png",
+      "size_bytes": 1017776,
+      "size_kb": 993.92,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\milestone_3_rooftop_pool.png",
+      "size_bytes": 961750,
+      "size_kb": 939.21,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\milestone_4_balcony_approach.png",
+      "size_bytes": 937762,
+      "size_kb": 915.78,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\milestone_5_interior_living.png",
+      "size_bytes": 899770,
+      "size_kb": 878.68,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\smoke_test.png",
+      "size_bytes": 283357,
+      "size_kb": 276.72,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\test_960.png",
+      "size_bytes": 539004,
+      "size_kb": 526.37,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\test_cycles.png",
+      "size_bytes": 264317,
+      "size_kb": 258.12,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0001.png",
+      "size_bytes": 303257,
+      "size_kb": 296.15,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0003.png",
+      "size_bytes": 303063,
+      "size_kb": 295.96,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0005.png",
+      "size_bytes": 303321,
+      "size_kb": 296.21,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0007.png",
+      "size_bytes": 303611,
+      "size_kb": 296.5,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0009.png",
+      "size_bytes": 303200,
+      "size_kb": 296.09,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0011.png",
+      "size_bytes": 303077,
+      "size_kb": 295.97,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0013.png",
+      "size_bytes": 302835,
+      "size_kb": 295.74,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0015.png",
+      "size_bytes": 302099,
+      "size_kb": 295.02,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0017.png",
+      "size_bytes": 301172,
+      "size_kb": 294.11,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0019.png",
+      "size_bytes": 301012,
+      "size_kb": 293.96,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0021.png",
+      "size_bytes": 300410,
+      "size_kb": 293.37,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0023.png",
+      "size_bytes": 299961,
+      "size_kb": 292.93,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0025.png",
+      "size_bytes": 299724,
+      "size_kb": 292.7,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0027.png",
+      "size_bytes": 298574,
+      "size_kb": 291.58,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0029.png",
+      "size_bytes": 297527,
+      "size_kb": 290.55,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0031.png",
+      "size_bytes": 296654,
+      "size_kb": 289.7,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0033.png",
+      "size_bytes": 296281,
+      "size_kb": 289.34,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0035.png",
+      "size_bytes": 296812,
+      "size_kb": 289.86,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0037.png",
+      "size_bytes": 295037,
+      "size_kb": 288.12,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0039.png",
+      "size_bytes": 295359,
+      "size_kb": 288.44,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0041.png",
+      "size_bytes": 295209,
+      "size_kb": 288.29,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0043.png",
+      "size_bytes": 293861,
+      "size_kb": 286.97,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0045.png",
+      "size_bytes": 294179,
+      "size_kb": 287.28,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0047.png",
+      "size_bytes": 293135,
+      "size_kb": 286.26,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0049.png",
+      "size_bytes": 292948,
+      "size_kb": 286.08,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0051.png",
+      "size_bytes": 291024,
+      "size_kb": 284.2,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0053.png",
+      "size_bytes": 290297,
+      "size_kb": 283.49,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0055.png",
+      "size_bytes": 290651,
+      "size_kb": 283.84,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0057.png",
+      "size_bytes": 289572,
+      "size_kb": 282.79,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0059.png",
+      "size_bytes": 287715,
+      "size_kb": 280.97,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0061.png",
+      "size_bytes": 288104,
+      "size_kb": 281.35,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0063.png",
+      "size_bytes": 289209,
+      "size_kb": 282.43,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0065.png",
+      "size_bytes": 291480,
+      "size_kb": 284.65,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0067.png",
+      "size_bytes": 292202,
+      "size_kb": 285.35,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0069.png",
+      "size_bytes": 293760,
+      "size_kb": 286.88,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0071.png",
+      "size_bytes": 295513,
+      "size_kb": 288.59,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0073.png",
+      "size_bytes": 295534,
+      "size_kb": 288.61,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0075.png",
+      "size_bytes": 295977,
+      "size_kb": 289.04,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0077.png",
+      "size_bytes": 297445,
+      "size_kb": 290.47,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0079.png",
+      "size_bytes": 296804,
+      "size_kb": 289.85,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0081.png",
+      "size_bytes": 296843,
+      "size_kb": 289.89,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0083.png",
+      "size_bytes": 298200,
+      "size_kb": 291.21,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0085.png",
+      "size_bytes": 298810,
+      "size_kb": 291.81,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0087.png",
+      "size_bytes": 299782,
+      "size_kb": 292.76,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0089.png",
+      "size_bytes": 301108,
+      "size_kb": 294.05,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0091.png",
+      "size_bytes": 298789,
+      "size_kb": 291.79,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0093.png",
+      "size_bytes": 296080,
+      "size_kb": 289.14,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0095.png",
+      "size_bytes": 293126,
+      "size_kb": 286.26,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0097.png",
+      "size_bytes": 288024,
+      "size_kb": 281.27,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0099.png",
+      "size_bytes": 281965,
+      "size_kb": 275.36,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0101.png",
+      "size_bytes": 277706,
+      "size_kb": 271.2,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0103.png",
+      "size_bytes": 274373,
+      "size_kb": 267.94,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0105.png",
+      "size_bytes": 272454,
+      "size_kb": 266.07,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0107.png",
+      "size_bytes": 271719,
+      "size_kb": 265.35,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0109.png",
+      "size_bytes": 268920,
+      "size_kb": 262.62,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0111.png",
+      "size_bytes": 266275,
+      "size_kb": 260.03,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0113.png",
+      "size_bytes": 262850,
+      "size_kb": 256.69,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0115.png",
+      "size_bytes": 260432,
+      "size_kb": 254.33,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0117.png",
+      "size_bytes": 257519,
+      "size_kb": 251.48,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0119.png",
+      "size_bytes": 254039,
+      "size_kb": 248.08,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0121.png",
+      "size_bytes": 252044,
+      "size_kb": 246.14,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0123.png",
+      "size_bytes": 249275,
+      "size_kb": 243.43,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0125.png",
+      "size_bytes": 253063,
+      "size_kb": 247.13,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0127.png",
+      "size_bytes": 258167,
+      "size_kb": 252.12,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0129.png",
+      "size_bytes": 264417,
+      "size_kb": 258.22,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0131.png",
+      "size_bytes": 271160,
+      "size_kb": 264.8,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0133.png",
+      "size_bytes": 277861,
+      "size_kb": 271.35,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0135.png",
+      "size_bytes": 290860,
+      "size_kb": 284.04,
+      "modified_iso": "2026-10-29T15:17:22Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0137.png",
+      "size_bytes": 299814,
+      "size_kb": 292.79,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0139.png",
+      "size_bytes": 302824,
+      "size_kb": 295.73,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0141.png",
+      "size_bytes": 303470,
+      "size_kb": 296.36,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0143.png",
+      "size_bytes": 302306,
+      "size_kb": 295.22,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0145.png",
+      "size_bytes": 297096,
+      "size_kb": 290.13,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0147.png",
+      "size_bytes": 288968,
+      "size_kb": 282.2,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0149.png",
+      "size_bytes": 283400,
+      "size_kb": 276.76,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0151.png",
+      "size_bytes": 281476,
+      "size_kb": 274.88,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0153.png",
+      "size_bytes": 272588,
+      "size_kb": 266.2,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0155.png",
+      "size_bytes": 261175,
+      "size_kb": 255.05,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0157.png",
+      "size_bytes": 269178,
+      "size_kb": 262.87,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0159.png",
+      "size_bytes": 265761,
+      "size_kb": 259.53,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0161.png",
+      "size_bytes": 264673,
+      "size_kb": 258.47,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0163.png",
+      "size_bytes": 262865,
+      "size_kb": 256.7,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0165.png",
+      "size_bytes": 260634,
+      "size_kb": 254.53,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0167.png",
+      "size_bytes": 259345,
+      "size_kb": 253.27,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0169.png",
+      "size_bytes": 254259,
+      "size_kb": 248.3,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0171.png",
+      "size_bytes": 243945,
+      "size_kb": 238.23,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0173.png",
+      "size_bytes": 64425,
+      "size_kb": 62.92,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0175.png",
+      "size_bytes": 259328,
+      "size_kb": 253.25,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0177.png",
+      "size_bytes": 252661,
+      "size_kb": 246.74,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\anim_frames\\frame_0179.png",
+      "size_bytes": 250132,
+      "size_kb": 244.27,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "renders\\preview\\ref_frames\\frame_00s.jpg",
+      "size_bytes": 564699,
+      "size_kb": 551.46,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".jpg"
+    },
+    {
+      "path": "renders\\preview\\ref_frames\\frame_05s.jpg",
+      "size_bytes": 578128,
+      "size_kb": 564.58,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".jpg"
+    },
+    {
+      "path": "renders\\preview\\ref_frames\\frame_10s.jpg",
+      "size_bytes": 303781,
+      "size_kb": 296.66,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".jpg"
+    },
+    {
+      "path": "renders\\preview\\ref_frames\\frame_15s.jpg",
+      "size_bytes": 455208,
+      "size_kb": 444.54,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".jpg"
+    },
+    {
+      "path": "renders\\preview\\ref_frames\\frame_20s.jpg",
+      "size_bytes": 740395,
+      "size_kb": 723.04,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".jpg"
+    },
+    {
+      "path": "renders\\preview\\ref_frames\\frame_25s.jpg",
+      "size_bytes": 323703,
+      "size_kb": 316.12,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".jpg"
+    },
+    {
+      "path": "scripts\\animate_camera.py",
+      "size_bytes": 11002,
+      "size_kb": 10.74,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "scripts\\blender_smoke_test.py",
+      "size_bytes": 4249,
+      "size_kb": 4.15,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "scripts\\build_facade.py",
+      "size_bytes": 20294,
+      "size_kb": 19.82,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "scripts\\build_interior.py",
+      "size_bytes": 14879,
+      "size_kb": 14.53,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "scripts\\build_massing.py",
+      "size_bytes": 17103,
+      "size_kb": 16.7,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "scripts\\compile_video.py",
+      "size_bytes": 1426,
+      "size_kb": 1.39,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "scripts\\interior_build.log",
+      "size_bytes": 601,
+      "size_kb": 0.59,
+      "modified_iso": "2026-10-29T13:36:16Z",
+      "extension": ".log"
+    },
+    {
+      "path": "scripts\\render_final_sequence.py",
+      "size_bytes": 5168,
+      "size_kb": 5.05,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "scripts\\render_interior_review.py",
+      "size_bytes": 1340,
+      "size_kb": 1.31,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "scripts\\test_interior_render.py",
+      "size_bytes": 871,
+      "size_kb": 0.85,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "scripts\\validate_massing.py",
+      "size_bytes": 4243,
+      "size_kb": 4.14,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".py"
+    },
+    {
+      "path": "website\\index.html",
+      "size_bytes": 25409,
+      "size_kb": 24.81,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".html"
+    },
+    {
+      "path": "website\\package.json",
+      "size_bytes": 396,
+      "size_kb": 0.39,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".json"
+    },
+    {
+      "path": "website\\sequence\\frame_0001.png",
+      "size_bytes": 638172,
+      "size_kb": 623.21,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0002.png",
+      "size_bytes": 638340,
+      "size_kb": 623.38,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0003.png",
+      "size_bytes": 637444,
+      "size_kb": 622.5,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0004.png",
+      "size_bytes": 637453,
+      "size_kb": 622.51,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0005.png",
+      "size_bytes": 636641,
+      "size_kb": 621.72,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0006.png",
+      "size_bytes": 637360,
+      "size_kb": 622.42,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0007.png",
+      "size_bytes": 636948,
+      "size_kb": 622.02,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0008.png",
+      "size_bytes": 635894,
+      "size_kb": 620.99,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0009.png",
+      "size_bytes": 635501,
+      "size_kb": 620.61,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0010.png",
+      "size_bytes": 634113,
+      "size_kb": 619.25,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0011.png",
+      "size_bytes": 634592,
+      "size_kb": 619.72,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0012.png",
+      "size_bytes": 632879,
+      "size_kb": 618.05,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0013.png",
+      "size_bytes": 631643,
+      "size_kb": 616.84,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0014.png",
+      "size_bytes": 630092,
+      "size_kb": 615.32,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0015.png",
+      "size_bytes": 629126,
+      "size_kb": 614.38,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0016.png",
+      "size_bytes": 627070,
+      "size_kb": 612.37,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0017.png",
+      "size_bytes": 626942,
+      "size_kb": 612.25,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0018.png",
+      "size_bytes": 627314,
+      "size_kb": 612.61,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0019.png",
+      "size_bytes": 625474,
+      "size_kb": 610.81,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0020.png",
+      "size_bytes": 625160,
+      "size_kb": 610.51,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0021.png",
+      "size_bytes": 624675,
+      "size_kb": 610.03,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0022.png",
+      "size_bytes": 622877,
+      "size_kb": 608.28,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0023.png",
+      "size_bytes": 621782,
+      "size_kb": 607.21,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0024.png",
+      "size_bytes": 619724,
+      "size_kb": 605.2,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0025.png",
+      "size_bytes": 619014,
+      "size_kb": 604.51,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0026.png",
+      "size_bytes": 614917,
+      "size_kb": 600.5,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0027.png",
+      "size_bytes": 613783,
+      "size_kb": 599.4,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0028.png",
+      "size_bytes": 611213,
+      "size_kb": 596.89,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0029.png",
+      "size_bytes": 607999,
+      "size_kb": 593.75,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0030.png",
+      "size_bytes": 604304,
+      "size_kb": 590.14,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0031.png",
+      "size_bytes": 603666,
+      "size_kb": 589.52,
+      "modified_iso": "2026-10-29T15:17:23Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0032.png",
+      "size_bytes": 608033,
+      "size_kb": 593.78,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0033.png",
+      "size_bytes": 612228,
+      "size_kb": 597.88,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0034.png",
+      "size_bytes": 615852,
+      "size_kb": 601.42,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0035.png",
+      "size_bytes": 619952,
+      "size_kb": 605.42,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0036.png",
+      "size_bytes": 621387,
+      "size_kb": 606.82,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0037.png",
+      "size_bytes": 622642,
+      "size_kb": 608.05,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0038.png",
+      "size_bytes": 623255,
+      "size_kb": 608.65,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0039.png",
+      "size_bytes": 624597,
+      "size_kb": 609.96,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0040.png",
+      "size_bytes": 624097,
+      "size_kb": 609.47,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0041.png",
+      "size_bytes": 625574,
+      "size_kb": 610.91,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0042.png",
+      "size_bytes": 626056,
+      "size_kb": 611.38,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0043.png",
+      "size_bytes": 626337,
+      "size_kb": 611.66,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0044.png",
+      "size_bytes": 627375,
+      "size_kb": 612.67,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0045.png",
+      "size_bytes": 627714,
+      "size_kb": 613.0,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0046.png",
+      "size_bytes": 625478,
+      "size_kb": 610.82,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0047.png",
+      "size_bytes": 620166,
+      "size_kb": 605.63,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0048.png",
+      "size_bytes": 614929,
+      "size_kb": 600.52,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0049.png",
+      "size_bytes": 606249,
+      "size_kb": 592.04,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0050.png",
+      "size_bytes": 597573,
+      "size_kb": 583.57,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0051.png",
+      "size_bytes": 588875,
+      "size_kb": 575.07,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0052.png",
+      "size_bytes": 583817,
+      "size_kb": 570.13,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0053.png",
+      "size_bytes": 580333,
+      "size_kb": 566.73,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0054.png",
+      "size_bytes": 579489,
+      "size_kb": 565.91,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0055.png",
+      "size_bytes": 575067,
+      "size_kb": 561.59,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0056.png",
+      "size_bytes": 570079,
+      "size_kb": 556.72,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0057.png",
+      "size_bytes": 564540,
+      "size_kb": 551.31,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0058.png",
+      "size_bytes": 559411,
+      "size_kb": 546.3,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0059.png",
+      "size_bytes": 554262,
+      "size_kb": 541.27,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0060.png",
+      "size_bytes": 547443,
+      "size_kb": 534.61,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0061.png",
+      "size_bytes": 542440,
+      "size_kb": 529.73,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0062.png",
+      "size_bytes": 535756,
+      "size_kb": 523.2,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0063.png",
+      "size_bytes": 542817,
+      "size_kb": 530.09,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0064.png",
+      "size_bytes": 552244,
+      "size_kb": 539.3,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0065.png",
+      "size_bytes": 565925,
+      "size_kb": 552.66,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0066.png",
+      "size_bytes": 576289,
+      "size_kb": 562.78,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0067.png",
+      "size_bytes": 585423,
+      "size_kb": 571.7,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0068.png",
+      "size_bytes": 603806,
+      "size_kb": 589.65,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0069.png",
+      "size_bytes": 620128,
+      "size_kb": 605.59,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0070.png",
+      "size_bytes": 622737,
+      "size_kb": 608.14,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0071.png",
+      "size_bytes": 622701,
+      "size_kb": 608.11,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0072.png",
+      "size_bytes": 621532,
+      "size_kb": 606.96,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0073.png",
+      "size_bytes": 613200,
+      "size_kb": 598.83,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0074.png",
+      "size_bytes": 601034,
+      "size_kb": 586.95,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0075.png",
+      "size_bytes": 590434,
+      "size_kb": 576.6,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0076.png",
+      "size_bytes": 586651,
+      "size_kb": 572.9,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0077.png",
+      "size_bytes": 573756,
+      "size_kb": 560.31,
+      "modified_iso": "2026-10-29T15:17:24Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0078.png",
+      "size_bytes": 553748,
+      "size_kb": 540.77,
+      "modified_iso": "2026-10-29T15:17:25Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0079.png",
+      "size_bytes": 566879,
+      "size_kb": 553.59,
+      "modified_iso": "2026-10-29T15:17:25Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0080.png",
+      "size_bytes": 567285,
+      "size_kb": 553.99,
+      "modified_iso": "2026-10-29T15:17:25Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0081.png",
+      "size_bytes": 563374,
+      "size_kb": 550.17,
+      "modified_iso": "2026-10-29T15:17:25Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0082.png",
+      "size_bytes": 559771,
+      "size_kb": 546.65,
+      "modified_iso": "2026-10-29T15:17:25Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0083.png",
+      "size_bytes": 555154,
+      "size_kb": 542.14,
+      "modified_iso": "2026-10-29T15:17:25Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0084.png",
+      "size_bytes": 556296,
+      "size_kb": 543.26,
+      "modified_iso": "2026-10-29T15:17:25Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0085.png",
+      "size_bytes": 548576,
+      "size_kb": 535.72,
+      "modified_iso": "2026-10-29T15:17:25Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0086.png",
+      "size_bytes": 525883,
+      "size_kb": 513.56,
+      "modified_iso": "2026-10-29T15:17:25Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0087.png",
+      "size_bytes": 119694,
+      "size_kb": 116.89,
+      "modified_iso": "2026-10-29T15:17:25Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0088.png",
+      "size_bytes": 559520,
+      "size_kb": 546.41,
+      "modified_iso": "2026-10-29T15:17:25Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0089.png",
+      "size_bytes": 545242,
+      "size_kb": 532.46,
+      "modified_iso": "2026-10-29T15:17:25Z",
+      "extension": ".png"
+    },
+    {
+      "path": "website\\sequence\\frame_0090.png",
+      "size_bytes": 540700,
+      "size_kb": 528.03,
+      "modified_iso": "2026-10-29T15:17:25Z",
+      "extension": ".png"
+    }
+  ]
+}

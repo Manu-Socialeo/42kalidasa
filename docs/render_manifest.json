@@ -1,0 +1,732 @@
+{
+  "project": "Kalidasa 42",
+  "description": "Production Scroll Animation Sequence (Floor 00 Establishing to Floor 08 Interior)",
+  "generated_at": "2026-10-29T14:56:16Z",
+  "total_frames": 90,
+  "resolution": "960x540",
+  "aspect_ratio": "16:9",
+  "fps_playback_target": 24,
+  "total_size_mb": 51.13,
+  "frames": [
+    {
+      "index": 1,
+      "timeline_frame": 1,
+      "filename": "frame_0001.png",
+      "resolution": "960x540",
+      "size_bytes": 638172,
+      "sha256": "42929957c16a27c729afeaf6379b71840434b3e8c8c3031360ad094926afc99b"
+    },
+    {
+      "index": 2,
+      "timeline_frame": 3,
+      "filename": "frame_0002.png",
+      "resolution": "960x540",
+      "size_bytes": 638340,
+      "sha256": "0792f1e0766ef06166b86d7b5e2aa1ee8a779e7bf5efa1249a541eff8b00e909"
+    },
+    {
+      "index": 3,
+      "timeline_frame": 5,
+      "filename": "frame_0003.png",
+      "resolution": "960x540",
+      "size_bytes": 637444,
+      "sha256": "672c9309756e1db4fa8a5858ce9873336ceb76f1264d7534b7a7d68d52094a9c"
+    },
+    {
+      "index": 4,
+      "timeline_frame": 7,
+      "filename": "frame_0004.png",
+      "resolution": "960x540",
+      "size_bytes": 637453,
+      "sha256": "58ef150ca94e02c9ac6f9bc44653a8335ac7094c5f9ecb4d9129643a3e889c31"
+    },
+    {
+      "index": 5,
+      "timeline_frame": 9,
+      "filename": "frame_0005.png",
+      "resolution": "960x540",
+      "size_bytes": 636641,
+      "sha256": "cc8960a09720f3003ec99b840755c10a72f41aeae179d83eef51a43cadf630c3"
+    },
+    {
+      "index": 6,
+      "timeline_frame": 11,
+      "filename": "frame_0006.png",
+      "resolution": "960x540",
+      "size_bytes": 637360,
+      "sha256": "a0b978214adbbbac858282f1050902cbdd1dd55bf28b3d12bab1c31ca233910e"
+    },
+    {
+      "index": 7,
+      "timeline_frame": 13,
+      "filename": "frame_0007.png",
+      "resolution": "960x540",
+      "size_bytes": 636948,
+      "sha256": "8c385131f2b5ae6b9d78bdfc6bfb0a6020acb51a02bd103f5f62b86db7014cad"
+    },
+    {
+      "index": 8,
+      "timeline_frame": 15,
+      "filename": "frame_0008.png",
+      "resolution": "960x540",
+      "size_bytes": 635894,
+      "sha256": "3c51b0e039bf86192798e39e8b9dcd61fcc83835cd7c0fba6cea8080e7d5ffa6"
+    },
+    {
+      "index": 9,
+      "timeline_frame": 17,
+      "filename": "frame_0009.png",
+      "resolution": "960x540",
+      "size_bytes": 635501,
+      "sha256": "a4b90cf840c8b50b81ad9f23386deef1a0af6811227d1ff39a40e165a3a5a89a"
+    },
+    {
+      "index": 10,
+      "timeline_frame": 19,
+      "filename": "frame_0010.png",
+      "resolution": "960x540",
+      "size_bytes": 634113,
+      "sha256": "393203d0aa4bf704595582e47c4ace2a7af18b6a4c7ffe264aed5dc03c16323b"
+    },
+    {
+      "index": 11,
+      "timeline_frame": 21,
+      "filename": "frame_0011.png",
+      "resolution": "960x540",
+      "size_bytes": 634592,
+      "sha256": "6a1917ba2ee2789d80ea9d714d38003dcb7092353ed108101f3332bfc44d8383"
+    },
+    {
+      "index": 12,
+      "timeline_frame": 23,
+      "filename": "frame_0012.png",
+      "resolution": "960x540",
+      "size_bytes": 632879,
+      "sha256": "caf846ee7ad6abac3bdb754614d0560599832bebc94667d7a692f50799673b45"
+    },
+    {
+      "index": 13,
+      "timeline_frame": 25,
+      "filename": "frame_0013.png",
+      "resolution": "960x540",
+      "size_bytes": 631643,
+      "sha256": "eb4150b1555bc036e447d4d97f39bf9e39a60a5b77695fe0e13d8d2810ea7f69"
+    },
+    {
+      "index": 14,
+      "timeline_frame": 27,
+      "filename": "frame_0014.png",
+      "resolution": "960x540",
+      "size_bytes": 630092,
+      "sha256": "1cf741f4117387a05c79a005535d153a9610e37a876d9107a27c00f42cce16c4"
+    },
+    {
+      "index": 15,
+      "timeline_frame": 29,
+      "filename": "frame_0015.png",
+      "resolution": "960x540",
+      "size_bytes": 629126,
+      "sha256": "f78911b5a3c17396f2b9abd72cd8fe108692da2edc29060004e570a55410ba53"
+    },
+    {
+      "index": 16,
+      "timeline_frame": 31,
+      "filename": "frame_0016.png",
+      "resolution": "960x540",
+      "size_bytes": 627070,
+      "sha256": "30cb1c86545d8dfda444af2abd329a7fd5bf39e9b1df51a2ffb9f81dee43078d"
+    },
+    {
+      "index": 17,
+      "timeline_frame": 33,
+      "filename": "frame_0017.png",
+      "resolution": "960x540",
+      "size_bytes": 626942,
+      "sha256": "c9b06669d2eb2c0fccbe9e1610ab42e9a0e92edd0975fc3e42ab64103e791fc1"
+    },
+    {
+      "index": 18,
+      "timeline_frame": 35,
+      "filename": "frame_0018.png",
+      "resolution": "960x540",
+      "size_bytes": 627314,
+      "sha256": "a3de115632149d692fc9410fd6701b4460340e98cfd988ded2bee55eb3dd4b63"
+    },
+    {
+      "index": 19,
+      "timeline_frame": 37,
+      "filename": "frame_0019.png",
+      "resolution": "960x540",
+      "size_bytes": 625474,
+      "sha256": "058ec69171307befa83d9083b1b93fa90bf47007e238cdcf3471384234c4b88f"
+    },
+    {
+      "index": 20,
+      "timeline_frame": 39,
+      "filename": "frame_0020.png",
+      "resolution": "960x540",
+      "size_bytes": 625160,
+      "sha256": "aa9a8e128e8df0bae9a6e5bd557407eec7b1ce70c07d8f7d8d85cbfd6373ec0d"
+    },
+    {
+      "index": 21,
+      "timeline_frame": 41,
+      "filename": "frame_0021.png",
+      "resolution": "960x540",
+      "size_bytes": 624675,
+      "sha256": "bffb94f7e871eed4e0aa0e431e2cf7ad3283fa73a3f6f9a087c41b5f225f5b02"
+    },
+    {
+      "index": 22,
+      "timeline_frame": 43,
+      "filename": "frame_0022.png",
+      "resolution": "960x540",
+      "size_bytes": 622877,
+      "sha256": "80fcb07558e0cc8f4e15fe9b97f02dfb7a5c457462f84eae7f985013d71104ff"
+    },
+    {
+      "index": 23,
+      "timeline_frame": 45,
+      "filename": "frame_0023.png",
+      "resolution": "960x540",
+      "size_bytes": 621782,
+      "sha256": "41dbce9f77d8a7002718929f691ef9907643cf102f6df661d0dbcb298377dea8"
+    },
+    {
+      "index": 24,
+      "timeline_frame": 47,
+      "filename": "frame_0024.png",
+      "resolution": "960x540",
+      "size_bytes": 619724,
+      "sha256": "6044badf9f29d5ba6dcad26f3ce152ef776cb6346b553072927b971c41d12c6d"
+    },
+    {
+      "index": 25,
+      "timeline_frame": 49,
+      "filename": "frame_0025.png",
+      "resolution": "960x540",
+      "size_bytes": 619014,
+      "sha256": "45f2fb342c06991948d877cd61feefc2e6296a599b970213cab18020aeec0fb4"
+    },
+    {
+      "index": 26,
+      "timeline_frame": 51,
+      "filename": "frame_0026.png",
+      "resolution": "960x540",
+      "size_bytes": 614917,
+      "sha256": "1308555ab974ed01b46314983ae92af40cf4f6b7819761c69c835d3ac9ff7a52"
+    },
+    {
+      "index": 27,
+      "timeline_frame": 53,
+      "filename": "frame_0027.png",
+      "resolution": "960x540",
+      "size_bytes": 613783,
+      "sha256": "e7ea038831029d867a8a7435d3f7b4b8dcba379131bb72986e97aeb56c92444b"
+    },
+    {
+      "index": 28,
+      "timeline_frame": 55,
+      "filename": "frame_0028.png",
+      "resolution": "960x540",
+      "size_bytes": 611213,
+      "sha256": "421bb8cdf5f02a58613ad5da0d279f2206b74e1c455da419723702d0aa700aa6"
+    },
+    {
+      "index": 29,
+      "timeline_frame": 57,
+      "filename": "frame_0029.png",
+      "resolution": "960x540",
+      "size_bytes": 607999,
+      "sha256": "ccd662970477fd46a9021503d34e454d072578b056db36ec2945ac031b3fee97"
+    },
+    {
+      "index": 30,
+      "timeline_frame": 59,
+      "filename": "frame_0030.png",
+      "resolution": "960x540",
+      "size_bytes": 604304,
+      "sha256": "b40212e3a9b0c6170348b003c05fb710cb276b44a909870e785e356edf87ea00"
+    },
+    {
+      "index": 31,
+      "timeline_frame": 61,
+      "filename": "frame_0031.png",
+      "resolution": "960x540",
+      "size_bytes": 603666,
+      "sha256": "d6c95bd8415f03b0cfa92d39c48ece0b12d08cbc29ad096f701231cc696179bd"
+    },
+    {
+      "index": 32,
+      "timeline_frame": 63,
+      "filename": "frame_0032.png",
+      "resolution": "960x540",
+      "size_bytes": 608033,
+      "sha256": "51d24b16b3586b881e1bc5ae953fe3e694d8a5bf6516d935dc7d53d174964b00"
+    },
+    {
+      "index": 33,
+      "timeline_frame": 65,
+      "filename": "frame_0033.png",
+      "resolution": "960x540",
+      "size_bytes": 612228,
+      "sha256": "94098270e90e687ff4d57ff2a2efa5bf53cb2f9eddefb169ff5e87818d7f95b0"
+    },
+    {
+      "index": 34,
+      "timeline_frame": 67,
+      "filename": "frame_0034.png",
+      "resolution": "960x540",
+      "size_bytes": 615852,
+      "sha256": "8971c6d44a980d458dd2aba76d8edeeeaf8f133e83fe83a9aef74c1c3b0bbeb1"
+    },
+    {
+      "index": 35,
+      "timeline_frame": 69,
+      "filename": "frame_0035.png",
+      "resolution": "960x540",
+      "size_bytes": 619952,
+      "sha256": "946a5f3725e559edc8d29c89c6ef9714db04b405ba264b1a2c9f4288b543b57e"
+    },
+    {
+      "index": 36,
+      "timeline_frame": 71,
+      "filename": "frame_0036.png",
+      "resolution": "960x540",
+      "size_bytes": 621387,
+      "sha256": "a1b632fb2a04adf536d0ca41ff9ceb9638bb8d7ceb4b98848efda39e00f583e7"
+    },
+    {
+      "index": 37,
+      "timeline_frame": 73,
+      "filename": "frame_0037.png",
+      "resolution": "960x540",
+      "size_bytes": 622642,
+      "sha256": "8672601f84b1027710709e0c4011e55586e27ba4cc572fc96c255e52205d17e0"
+    },
+    {
+      "index": 38,
+      "timeline_frame": 75,
+      "filename": "frame_0038.png",
+      "resolution": "960x540",
+      "size_bytes": 623255,
+      "sha256": "fce297dbf37771973925859173b46d5cf6a7a25bc754a26ff330115bfbcdb479"
+    },
+    {
+      "index": 39,
+      "timeline_frame": 77,
+      "filename": "frame_0039.png",
+      "resolution": "960x540",
+      "size_bytes": 624597,
+      "sha256": "b4a6b3c1a1b680445c74eb7e5f7c685f213e1b2b87725816e76d65ff7781ec63"
+    },
+    {
+      "index": 40,
+      "timeline_frame": 79,
+      "filename": "frame_0040.png",
+      "resolution": "960x540",
+      "size_bytes": 624097,
+      "sha256": "b92aaaa80b8933e48c61799f59959fac06e120917e697b4f411c0a31d642846d"
+    },
+    {
+      "index": 41,
+      "timeline_frame": 81,
+      "filename": "frame_0041.png",
+      "resolution": "960x540",
+      "size_bytes": 625574,
+      "sha256": "5b8bc1df122db9eafaf6132adaa89ed59a151f9c208832c421c64eeda1deeceb"
+    },
+    {
+      "index": 42,
+      "timeline_frame": 83,
+      "filename": "frame_0042.png",
+      "resolution": "960x540",
+      "size_bytes": 626056,
+      "sha256": "fc5490a82c1596221848427151cbf34f3e729b2d8df1005a00f2c32d8d1d7856"
+    },
+    {
+      "index": 43,
+      "timeline_frame": 85,
+      "filename": "frame_0043.png",
+      "resolution": "960x540",
+      "size_bytes": 626337,
+      "sha256": "d86ea57ad49b9cea99152fc2918cac6356ccb70c4687dd7fd136c805070ae1f1"
+    },
+    {
+      "index": 44,
+      "timeline_frame": 87,
+      "filename": "frame_0044.png",
+      "resolution": "960x540",
+      "size_bytes": 627375,
+      "sha256": "16d02cdb8802c7d3d3288e3769a3650f377a1635f94fad32183122e97aa675d5"
+    },
+    {
+      "index": 45,
+      "timeline_frame": 89,
+      "filename": "frame_0045.png",
+      "resolution": "960x540",
+      "size_bytes": 627714,
+      "sha256": "59c975d8be383fc68750f09327d0abf0e4c1ed79084c4f009b329ac219147bfd"
+    },
+    {
+      "index": 46,
+      "timeline_frame": 91,
+      "filename": "frame_0046.png",
+      "resolution": "960x540",
+      "size_bytes": 625478,
+      "sha256": "7db6db9cffcf55c00d048b0712bda757a7f780caffe9ba21079d26eab2ff2b1a"
+    },
+    {
+      "index": 47,
+      "timeline_frame": 93,
+      "filename": "frame_0047.png",
+      "resolution": "960x540",
+      "size_bytes": 620166,
+      "sha256": "9119230dd37a3e76b55026d0eb7963c87edb8f14cb58ffdfbfeb1b13cedad56a"
+    },
+    {
+      "index": 48,
+      "timeline_frame": 95,
+      "filename": "frame_0048.png",
+      "resolution": "960x540",
+      "size_bytes": 614929,
+      "sha256": "3fa4df3ceec1298c20fd84daa737e72bec935f73326ba72334c9721b761bfaf2"
+    },
+    {
+      "index": 49,
+      "timeline_frame": 97,
+      "filename": "frame_0049.png",
+      "resolution": "960x540",
+      "size_bytes": 606249,
+      "sha256": "883ff3b07e8b51ec07e1db8751d5f6830d3f4e62ca951ed41fa196355d9e2bbf"
+    },
+    {
+      "index": 50,
+      "timeline_frame": 99,
+      "filename": "frame_0050.png",
+      "resolution": "960x540",
+      "size_bytes": 597573,
+      "sha256": "e612ebe6ef64f44a1a145a52e4a5a0668eaf880ff5cd6ca1a8773871c421eaed"
+    },
+    {
+      "index": 51,
+      "timeline_frame": 101,
+      "filename": "frame_0051.png",
+      "resolution": "960x540",
+      "size_bytes": 588875,
+      "sha256": "2706b528ee47e23d1a63abc9ec784318ddb16fdc0c94ad37fc889f5ef27f66d5"
+    },
+    {
+      "index": 52,
+      "timeline_frame": 103,
+      "filename": "frame_0052.png",
+      "resolution": "960x540",
+      "size_bytes": 583817,
+      "sha256": "befae6c909d91acd2ec1f0e154b47ca535517ae193eca8b1a0b90a472038793a"
+    },
+    {
+      "index": 53,
+      "timeline_frame": 105,
+      "filename": "frame_0053.png",
+      "resolution": "960x540",
+      "size_bytes": 580333,
+      "sha256": "7585cbb9e8bb5e34d93d9e4eef61ac9f902d7e49484639c191889223fb104955"
+    },
+    {
+      "index": 54,
+      "timeline_frame": 107,
+      "filename": "frame_0054.png",
+      "resolution": "960x540",
+      "size_bytes": 579489,
+      "sha256": "15f7801d9ce01a2ed82b155af2bb006de7892c16f2c5f18d3d183a0565a882da"
+    },
+    {
+      "index": 55,
+      "timeline_frame": 109,
+      "filename": "frame_0055.png",
+      "resolution": "960x540",
+      "size_bytes": 575067,
+      "sha256": "2dd415a19866f173ee1ba82c159bb90f8df8872ded2066b60fcfa36a1fa48cad"
+    },
+    {
+      "index": 56,
+      "timeline_frame": 111,
+      "filename": "frame_0056.png",
+      "resolution": "960x540",
+      "size_bytes": 570079,
+      "sha256": "d46ea207b95b55d1f6948f21af4e47145a75b91d1030fd0a734a8eafd95b2b31"
+    },
+    {
+      "index": 57,
+      "timeline_frame": 113,
+      "filename": "frame_0057.png",
+      "resolution": "960x540",
+      "size_bytes": 564540,
+      "sha256": "9b85db3e1af9b1af48dbc0943a9c619b8a56c78afccbd1449a61f7243645abbf"
+    },
+    {
+      "index": 58,
+      "timeline_frame": 115,
+      "filename": "frame_0058.png",
+      "resolution": "960x540",
+      "size_bytes": 559411,
+      "sha256": "49f6b7d71aa7a0d1216f7afe181e8de153cc5cf1a93f866115493f838a594d9e"
+    },
+    {
+      "index": 59,
+      "timeline_frame": 117,
+      "filename": "frame_0059.png",
+      "resolution": "960x540",
+      "size_bytes": 554262,
+      "sha256": "ee20369fc95f421733fdb9fbf576a8380689fbb4f14dd4b4b3b4ab2f4bd15879"
+    },
+    {
+      "index": 60,
+      "timeline_frame": 119,
+      "filename": "frame_0060.png",
+      "resolution": "960x540",
+      "size_bytes": 547443,
+      "sha256": "0030813d5cd5d7debdd313990308fabd3bf0230a8a6ca2cefbb10ed07035d098"
+    },
+    {
+      "index": 61,
+      "timeline_frame": 121,
+      "filename": "frame_0061.png",
+      "resolution": "960x540",
+      "size_bytes": 542440,
+      "sha256": "922ec995a0bf0206abfbc79f4d2569a2c1f4289c1e25f3a92a869bac2365c3b4"
+    },
+    {
+      "index": 62,
+      "timeline_frame": 123,
+      "filename": "frame_0062.png",
+      "resolution": "960x540",
+      "size_bytes": 535756,
+      "sha256": "67156ffc6ee8144c8ecf5a04230cae517a1853d4c66eb70e4bd6042392740bee"
+    },
+    {
+      "index": 63,
+      "timeline_frame": 125,
+      "filename": "frame_0063.png",
+      "resolution": "960x540",
+      "size_bytes": 542817,
+      "sha256": "8883ca4123e0ca606d0ede6eeecaf35b892d7526f845704fa730b89fa16f0571"
+    },
+    {
+      "index": 64,
+      "timeline_frame": 127,
+      "filename": "frame_0064.png",
+      "resolution": "960x540",
+      "size_bytes": 552244,
+      "sha256": "138cd411b7be4b03e0b4ab7cffef2cecbff3b6de2b804e98ccc72398b18300d3"
+    },
+    {
+      "index": 65,
+      "timeline_frame": 129,
+      "filename": "frame_0065.png",
+      "resolution": "960x540",
+      "size_bytes": 565925,
+      "sha256": "fbb1fd0ec5a30e7f08ec7b6b419414e53a98a60e5021c67e82a6fb6c022df29d"
+    },
+    {
+      "index": 66,
+      "timeline_frame": 131,
+      "filename": "frame_0066.png",
+      "resolution": "960x540",
+      "size_bytes": 576289,
+      "sha256": "dc58658b86211d17b54817ecfbe37cf40647a550fcec0756cf8002e2dc1de325"
+    },
+    {
+      "index": 67,
+      "timeline_frame": 133,
+      "filename": "frame_0067.png",
+      "resolution": "960x540",
+      "size_bytes": 585423,
+      "sha256": "93988ddca05f38e954628823eeb81ac517868aa4fec73e231e0b8e3587187816"
+    },
+    {
+      "index": 68,
+      "timeline_frame": 135,
+      "filename": "frame_0068.png",
+      "resolution": "960x540",
+      "size_bytes": 603806,
+      "sha256": "095595f8804c2df0e3f8a0415e4d8ac70b431d2bcb3450ffa8d5b9539c745527"
+    },
+    {
+      "index": 69,
+      "timeline_frame": 137,
+      "filename": "frame_0069.png",
+      "resolution": "960x540",
+      "size_bytes": 620128,
+      "sha256": "3f37ae3e66a5dbf757b1fab274484068b08c10d0027709bcb13e993bd81a9f48"
+    },
+    {
+      "index": 70,
+      "timeline_frame": 139,
+      "filename": "frame_0070.png",
+      "resolution": "960x540",
+      "size_bytes": 622737,
+      "sha256": "d8b34bdc83d6717cc3bc58e427b3ec953f42afe565f0337510c0abb4372a5248"
+    },
+    {
+      "index": 71,
+      "timeline_frame": 141,
+      "filename": "frame_0071.png",
+      "resolution": "960x540",
+      "size_bytes": 622701,
+      "sha256": "2d22283b66362a3dce189afb74136ef52880ecd11800cb2f9785e22c40c52127"
+    },
+    {
+      "index": 72,
+      "timeline_frame": 143,
+      "filename": "frame_0072.png",
+      "resolution": "960x540",
+      "size_bytes": 621532,
+      "sha256": "525db55e8203dc2d319cff9beb4d9fb5a9f2eb688f4755424a76ecd0e964ab65"
+    },
+    {
+      "index": 73,
+      "timeline_frame": 145,
+      "filename": "frame_0073.png",
+      "resolution": "960x540",
+      "size_bytes": 613200,
+      "sha256": "f41de69e03244e36adb3c7a4d638f711179751de276b1e37d8eb12a4c30cd54c"
+    },
+    {
+      "index": 74,
+      "timeline_frame": 147,
+      "filename": "frame_0074.png",
+      "resolution": "960x540",
+      "size_bytes": 601034,
+      "sha256": "a7cbfbeb08186462679c6ddedd3940eaad5c9ece957909a9468abdb2b86da667"
+    },
+    {
+      "index": 75,
+      "timeline_frame": 149,
+      "filename": "frame_0075.png",
+      "resolution": "960x540",
+      "size_bytes": 590434,
+      "sha256": "c1343d704bb20f2944fc473a04f9855ea88dfb06a2c949fdb485cf4b0da4c630"
+    },
+    {
+      "index": 76,
+      "timeline_frame": 151,
+      "filename": "frame_0076.png",
+      "resolution": "960x540",
+      "size_bytes": 586651,
+      "sha256": "676416caa33c4c2ad7c9c073f0bfb1d7a84e6a49f948d031ac1e6d0a4e40fed6"
+    },
+    {
+      "index": 77,
+      "timeline_frame": 153,
+      "filename": "frame_0077.png",
+      "resolution": "960x540",
+      "size_bytes": 573756,
+      "sha256": "f598bdb164de46b4b29969e15cff8bbcafb6df1e6839bbe768648c62ff36f1a2"
+    },
+    {
+      "index": 78,
+      "timeline_frame": 155,
+      "filename": "frame_0078.png",
+      "resolution": "960x540",
+      "size_bytes": 553748,
+      "sha256": "ceb1c4ab5957c8cc596bb71e4f04fe8c52fe814472f923cccaca382c32a4220d"
+    },
+    {
+      "index": 79,
+      "timeline_frame": 157,
+      "filename": "frame_0079.png",
+      "resolution": "960x540",
+      "size_bytes": 566879,
+      "sha256": "bddd099c1ef30c305f361c743ffc241bf3c598e8a76de9b796d46d1c33670d5f"
+    },
+    {
+      "index": 80,
+      "timeline_frame": 159,
+      "filename": "frame_0080.png",
+      "resolution": "960x540",
+      "size_bytes": 567285,
+      "sha256": "0743ec0d7aa1954f5fd3c8e13618bf41401d19fc7878c6cf10262d2e4e571144"
+    },
+    {
+      "index": 81,
+      "timeline_frame": 161,
+      "filename": "frame_0081.png",
+      "resolution": "960x540",
+      "size_bytes": 563374,
+      "sha256": "81ea331038865524be7df43d099202953ca8cd7002610a6f30fc113203776bee"
+    },
+    {
+      "index": 82,
+      "timeline_frame": 163,
+      "filename": "frame_0082.png",
+      "resolution": "960x540",
+      "size_bytes": 559771,
+      "sha256": "21451b9f708e551a6e6dbb0843a00af36f881edcb211a7d3d93b43fdc0484887"
+    },
+    {
+      "index": 83,
+      "timeline_frame": 165,
+      "filename": "frame_0083.png",
+      "resolution": "960x540",
+      "size_bytes": 555154,
+      "sha256": "7606e65f3a04620529100cf7f8885290cfd9f76b5d879ec0002baf4331374973"
+    },
+    {
+      "index": 84,
+      "timeline_frame": 167,
+      "filename": "frame_0084.png",
+      "resolution": "960x540",
+      "size_bytes": 556296,
+      "sha256": "6a8c2e58cc8b34f5564ead5fa1b887191bbad3a641189fcf8745b37f2e02d278"
+    },
+    {
+      "index": 85,
+      "timeline_frame": 169,
+      "filename": "frame_0085.png",
+      "resolution": "960x540",
+      "size_bytes": 548576,
+      "sha256": "4090a0b0b9044ff6e9c4312a8d2200200e4df30ddbfbbc44803b9bedb8d5bf5a"
+    },
+    {
+      "index": 86,
+      "timeline_frame": 171,
+      "filename": "frame_0086.png",
+      "resolution": "960x540",
+      "size_bytes": 525883,
+      "sha256": "e6d9842ad522c62cfec9c80a7285d3a570d2ad6216a792f3d4139b214d98f03e"
+    },
+    {
+      "index": 87,
+      "timeline_frame": 173,
+      "filename": "frame_0087.png",
+      "resolution": "960x540",
+      "size_bytes": 119694,
+      "sha256": "46a384b548677f6398f6782fbbb69f39646d36d64d555052c8924af070672567"
+    },
+    {
+      "index": 88,
+      "timeline_frame": 175,
+      "filename": "frame_0088.png",
+      "resolution": "960x540",
+      "size_bytes": 559520,
+      "sha256": "006ab49ec8800a1bbe8a382d974951e187995efa45c182c3b27e8ca79df81282"
+    },
+    {
+      "index": 89,
+      "timeline_frame": 177,
+      "filename": "frame_0089.png",
+      "resolution": "960x540",
+      "size_bytes": 545242,
+      "sha256": "d0af1c3cf09c4aa0e50b3c3e585a0aa045c0dedf06628b880309a506df751517"
+    },
+    {
+      "index": 90,
+      "timeline_frame": 179,
+      "filename": "frame_0090.png",
+      "resolution": "960x540",
+      "size_bytes": 540700,
+      "sha256": "f4de00d340e18c46b0ff2d3851db6cfd65dae8d1c24d4da385503f51e7dfcd04"
+    }
+  ]
+}

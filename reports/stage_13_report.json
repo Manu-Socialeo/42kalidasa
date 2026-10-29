@@ -1,0 +1,27 @@
+{
+  "stage": 13,
+  "name": "Scroll-controlled animation integration",
+  "status": "PASSED",
+  "timestamp": "2026-10-29T21:43:00+05:30",
+  "deliverables": {
+    "interactive_canvas": "HTML5 2D Canvas with spring-lerp damping factor 0.18",
+    "timeline_mapping": "90 frames across 500vh scroll height (1 frame per ~5.5vh)",
+    "scrubber_control": "Two-way synchronized timeline slider (<input type='range' min='1' max='90'>)",
+    "keyboard_navigation": "ArrowUp / ArrowDown / ArrowLeft / ArrowRight / Home / End",
+    "fallback_video": "website/camera_path_preview.mp4 (941.8 KB H.264 MP4)",
+    "reduced_motion": "@media (prefers-reduced-motion: reduce) CSS rule overrides transitions and displays stationary card layouts"
+  },
+  "acceptance_checks": {
+    "monotonic_bidirectional_mapping": true,
+    "motion_halts_on_scroll_stop": true,
+    "mobile_and_error_fallbacks_verified": true
+  },
+  "metrics": {
+    "total_sequence_frames": 90,
+    "total_sequence_size_mb": 51.13,
+    "video_fallback_size_kb": 919.8,
+    "preloader_type": "Progressive bar with loading percentage feedback",
+    "canvas_aspect_handling": "Cover fit with window.devicePixelRatio high-DPI scaling"
+  }
+}
+
