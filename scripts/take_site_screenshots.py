@@ -68,3 +68,4 @@ async def take_screenshots():
 
 if __name__ == '__main__':
     asyncio.run(take_screenshots())
+
