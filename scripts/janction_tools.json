@@ -1,0 +1,1011 @@
+[
+  {
+    "_meta": {
+      "ui": {
+        "resourceUri": "ui://janction-render/app.html"
+      },
+      "ui/resourceUri": "ui://janction-render/app.html"
+    },
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": false,
+      "openWorldHint": true,
+      "readOnlyHint": false,
+      "title": "Render preview"
+    },
+    "description": "Show what a Blender scene looks like: a fast, low-cost preview render on a cloud GPU, back as an image in seconds. Typical requests: 'render this .blend', 'show me the scene', 'preview the turntable', 'I have no GPU', 'Blender is too slow on my laptop', 'Blender\u3067\u30ec\u30f3\u30c0\u30ea\u30f3\u30b0\u3057\u3066', 'GPU\u304c\u306a\u3044', '\u30bf\u30fc\u30f3\u30c6\u30fc\u30d6\u30eb', '\u5546\u54c1\u306e360\u5ea6\u52d5\u753b'. Also use it after writing a bpy script, to see what it builds. Each preview returns a critic verdict (ok / check / fix) with fix code: apply the fixes and preview again before any final render. It also returns final_estimate (the same scene as a 1080p final) and quota_left_today; tell the user both before asking to go on. Prices come before rendering: final_offers give each next render's time and price, and a paid one needs the user's approval. A script that raises comes back as a failure with the line (nothing is rendered). When not to use: editing a scene open in the user's Blender belongs to a local Blender MCP, and a single still on a machine with its own NVIDIA GPU usually renders faster locally. This service is for CPU-only machines, animations, and scripts with no Blender installed. Limits: up to 1280x720; 1-4 frames tiled in one labeled image for the GPU time of one 720p frame. preset='product' | 'turntable' | 'animation' sets camera, light, backdrop and frames for that purpose. Other options are explained on each parameter: environment presets and 'compare', orbit (turntable), cameras (several named cameras), engine, transparent, asset_urls with 'polyhaven:<id>' CC0 assets. Give the scene as scene_script (bpy code as text), scene_url (an https link to a .blend, .py or 3D file) or scene_id; reuse the returned scene_id in render_final.",
+    "inputSchema": {
+      "properties": {
+        "scene_script": {
+          "default": "",
+          "title": "Scene Script",
+          "type": "string",
+          "description": "The scene as bpy Python code (text). No file and no local Blender needed; the service runs it in Blender 5.0 (5.2 with blender='5.2'). Blender 5.0 API notes: materials are node-based, so set a colour on the Principled BSDF (mat.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value = (r, g, b, 1)); mat.diffuse_color only affects the viewport; do not set Material.use_nodes. Animate with obj.keyframe_insert() (action.fcurves no longer exists; set bpy.context.preferences.edit.keyframe_new_interpolation_type = 'LINEAR' first for constant speed). Build the scene, camera and frame range only; leave resolution, samples and denoising to the service. Helpers: `import jr_assets`, then jr_assets.frame_camera(margin=1.1) points the camera at every object and fits them in the frame; jr_assets.import_model('<id>'), jr_assets.material('<id>') and jr_assets.world_hdri('<id>') use Poly Haven assets passed in asset_urls."
+        },
+        "scene_url": {
+          "default": "",
+          "title": "Scene Url",
+          "type": "string",
+          "description": "https link to a .blend, a .py script or a 3D file (.glb/.gltf/.fbx/.usd/.obj/.stl/.ply/.abc); the service fetches it (e.g. the sample https://render.janction.jp/samples/cube_scene.py, or a 12-hour /upload link). A .gltf or .obj also brings its .bin / .mtl / textures from the same folder."
+        },
+        "scene_id": {
+          "default": "",
+          "title": "Scene Id",
+          "type": "string",
+          "description": "scene_id returned by an earlier call (reuses the uploaded scene without sending it again)."
+        },
+        "frames": {
+          "default": "",
+          "title": "Frames",
+          "type": "string",
+          "description": "Preview frames: '' = frame 1; '12' = one frame; '1,8,16,24' or '1-24' = up to 4 frames tiled in one labeled image (to judge camera motion and animation; same GPU time as one 720p frame)."
+        },
+        "camera": {
+          "default": "",
+          "title": "Camera",
+          "type": "string",
+          "description": "Name of the camera object to render from (default: the scene's active camera, or an automatic camera if there is none). Ignored with orbit=True; not combinable with cameras."
+        },
+        "width": {
+          "default": 1280,
+          "title": "Width",
+          "type": "integer",
+          "description": "Output width in pixels (previews are capped at 1280x720 keeping the aspect ratio; a final frame can have at most 1920x1080 pixels on free time, 3840x2160 on prepaid credit)."
+        },
+        "height": {
+          "default": 720,
+          "title": "Height",
+          "type": "integer",
+          "description": "Output height in pixels (previews are capped at 1280x720 keeping the aspect ratio; a final frame can have at most 1920x1080 pixels on free time, 3840x2160 on prepaid credit)."
+        },
+        "samples": {
+          "default": 16,
+          "title": "Samples",
+          "type": "integer",
+          "description": "Cycles samples per pixel (preview: up to 32, default 16; final: default 128)."
+        },
+        "environment": {
+          "default": "",
+          "title": "Environment",
+          "type": "string",
+          "description": "Lighting preset: '' (the scene's own world), 'studio', 'sunset', 'overcast' or 'night' (bundled HDRIs; a good first render for scenes without lighting work), or 'compare' (preview only: all four in one labeled 2x2 image, to pick one)."
+        },
+        "environment_strength": {
+          "default": 1.0,
+          "title": "Environment Strength",
+          "type": "number",
+          "description": "Multiplier for the HDRI preset's brightness (default 1.0)."
+        },
+        "environment_visible": {
+          "default": true,
+          "title": "Environment Visible",
+          "type": "boolean",
+          "description": "False hides the HDRI from the camera (flat grey backdrop, HDRI lighting only)."
+        },
+        "blender": {
+          "default": "",
+          "title": "Blender",
+          "type": "string",
+          "description": "Blender version: '' (default: a .blend opens with the version it was saved in, other scenes with 5.0) or '5.0' / '5.2' (also '4.5', '4.2', '3.6'; a script that stops on Blender 5 because of an older API is rendered again on those automatically) to choose."
+        },
+        "asset_urls": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Asset Urls",
+          "description": "Extra files sent with the scene: https links (textures, glTF .bin) or 'polyhaven:<id>' CC0 assets from asset_search ('polyhaven:<id>@2k' for 2k textures). A .blend finds them through relative paths (same folder); a script through os.environ['JR_ASSETS_DIR'] or the jr_assets helpers."
+        },
+        "orbit": {
+          "default": false,
+          "title": "Orbit",
+          "type": "boolean",
+          "description": "True: turntable; an orbit camera circles the scene once (the scene's own camera is not used). Flat floors and walls are ignored when framing. A preview without frames shows 0/90/180/270 degrees; a final without frame_end renders the whole turn as an MP4. Best for imported models and product videos."
+        },
+        "orbit_frames": {
+          "default": 24,
+          "title": "Orbit Frames",
+          "type": "integer",
+          "description": "Number of frames for one full turn (default 24)."
+        },
+        "orbit_elevation": {
+          "default": 18.0,
+          "title": "Orbit Elevation",
+          "type": "number",
+          "description": "Orbit camera elevation in degrees (default 18)."
+        },
+        "orbit_target": {
+          "default": "",
+          "title": "Orbit Target",
+          "type": "string",
+          "description": "Object name or 'x,y,z' to centre the orbit on (default: the scene's main objects)."
+        },
+        "orbit_distance": {
+          "default": 1.0,
+          "title": "Orbit Distance",
+          "type": "number",
+          "description": "Multiplier for the orbit camera distance (default 1.0)."
+        },
+        "engine": {
+          "default": "",
+          "title": "Engine",
+          "type": "string",
+          "description": "'' or 'cycles' (path tracing, default) | 'eevee' (real-time rasterizer: about half the per-frame cost on animations of a few dozen frames or more; each job pays about 7 s of shader compilation, so previews stay on Cycles)."
+        },
+        "transparent": {
+          "default": false,
+          "title": "Transparent",
+          "type": "boolean",
+          "description": "True renders on a transparent background (alpha) for product shots and overlays; png / exr / webm / gif / webp keep it, mp4 and prores cannot. The preview sheet shows it over dark grey."
+        },
+        "cameras": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cameras",
+          "description": "Several camera object names (up to 8) rendered from the same frame in one job: the preview tiles them in one labeled sheet, the final returns one PNG/EXR per camera (camera_files maps names to files). For product shots from fixed angles. Not combinable with orbit, environment='compare' or camera."
+        },
+        "preset": {
+          "default": "",
+          "title": "Preset",
+          "type": "string",
+          "description": "Purpose preset: 'product' (4 studio shots at 0/90/180/270 deg on a plain backdrop; the final gives 4 PNGs at 1440x1440), 'turntable' (one full turn as an MP4, studio light, plain backdrop), 'animation' (the scene's own camera, lights and frame range; the scene is read first when the range is unknown), or '' (none). It fills what you do not pass; environment, orbit_frames, width/height and the frames still win when given."
+        }
+      },
+      "type": "object",
+      "title": "render_previewArguments"
+    },
+    "name": "render_preview",
+    "title": "Render preview"
+  },
+  {
+    "_meta": {
+      "ui": {
+        "resourceUri": "ui://janction-render/app.html"
+      },
+      "ui/resourceUri": "ui://janction-render/app.html"
+    },
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": false,
+      "openWorldHint": true,
+      "readOnlyHint": false,
+      "title": "Render final frames or video"
+    },
+    "description": "Render the final frames or video of a Blender scene on cloud GPUs, after the user approved a preview: 'render the final', 'make the video', 'export the turntable MP4'. Call render_estimate first when the time or the free GPU time left (the welcome credit, or 2 preview GPU-minutes a day after it) is uncertain, the job is longer than about 24 frames or above 720p, or the user asks how long it takes, and tell the user. For animations, keep the approved engine/look, test 10 contiguous final-path frames, then estimate again. Long jobs are rendered in chunks and joined into one video. Returns job_id and estimate.human at once (short jobs return the links directly); then call render_download(job_id, wait_seconds=45). Use the same environment and blender as the approved preview. Render only what the user approved at the shown price (max_yen caps it). Limits: up to 3,000 frames per call (over 240 runs as parts under one job id); 1920x1080 on free time, 3840x2160 with prepaid credit; each new key gets 100 JPY of GPU time free with no card (14 days) and 400 JPY more once the user saves a card on a page that charges nothing (once per card); after that, previews are free up to 2 GPU-minutes a day and finals cost 0.1 JPY per GPU-second (prepaid); ask before a render the free time does not cover; files are deleted 24 h after last use (7 days once topped up). preset='product' | 'turntable' | 'animation' fills the settings for that purpose. Options per parameter: output (png, exr, mp4, webm, prores, gif, webp), orbit, cameras, transparent, engine, notify_url, asset_urls ('polyhaven:<id>'). Pass scene_id from render_preview, or scene_script / scene_url for a new scene.",
+    "inputSchema": {
+      "properties": {
+        "scene_id": {
+          "default": "",
+          "title": "Scene Id",
+          "type": "string",
+          "description": "scene_id returned by an earlier call (reuses the uploaded scene without sending it again)."
+        },
+        "scene_script": {
+          "default": "",
+          "title": "Scene Script",
+          "type": "string",
+          "description": "The scene as bpy Python code (text). No file and no local Blender needed; the service runs it in Blender 5.0 (5.2 with blender='5.2'). Blender 5.0 API notes: materials are node-based, so set a colour on the Principled BSDF (mat.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value = (r, g, b, 1)); mat.diffuse_color only affects the viewport; do not set Material.use_nodes. Animate with obj.keyframe_insert() (action.fcurves no longer exists; set bpy.context.preferences.edit.keyframe_new_interpolation_type = 'LINEAR' first for constant speed). Build the scene, camera and frame range only; leave resolution, samples and denoising to the service. Helpers: `import jr_assets`, then jr_assets.frame_camera(margin=1.1) points the camera at every object and fits them in the frame; jr_assets.import_model('<id>'), jr_assets.material('<id>') and jr_assets.world_hdri('<id>') use Poly Haven assets passed in asset_urls."
+        },
+        "scene_url": {
+          "default": "",
+          "title": "Scene Url",
+          "type": "string",
+          "description": "https link to a .blend, a .py script or a 3D file (.glb/.gltf/.fbx/.usd/.obj/.stl/.ply/.abc); the service fetches it (e.g. the sample https://render.janction.jp/samples/cube_scene.py, or a 12-hour /upload link). A .gltf or .obj also brings its .bin / .mtl / textures from the same folder."
+        },
+        "frame_start": {
+          "default": 1,
+          "title": "Frame Start",
+          "type": "integer",
+          "description": "First frame to render (inclusive)."
+        },
+        "frame_end": {
+          "default": 1,
+          "title": "Frame End",
+          "type": "integer",
+          "description": "Last frame to render (inclusive); equal to frame_start for a single image. With orbit=True and no frame_end, one full turn is rendered."
+        },
+        "width": {
+          "default": 1920,
+          "title": "Width",
+          "type": "integer",
+          "description": "Output width in pixels (previews are capped at 1280x720 keeping the aspect ratio; a final frame can have at most 1920x1080 pixels on free time, 3840x2160 on prepaid credit)."
+        },
+        "height": {
+          "default": 1080,
+          "title": "Height",
+          "type": "integer",
+          "description": "Output height in pixels (previews are capped at 1280x720 keeping the aspect ratio; a final frame can have at most 1920x1080 pixels on free time, 3840x2160 on prepaid credit)."
+        },
+        "samples": {
+          "default": 128,
+          "title": "Samples",
+          "type": "integer",
+          "description": "Cycles samples per pixel (preview: up to 32, default 16; final: default 128)."
+        },
+        "fps": {
+          "default": 24,
+          "title": "Fps",
+          "type": "integer",
+          "description": "Frames per second of the video output (default 24)."
+        },
+        "output": {
+          "default": "auto",
+          "title": "Output",
+          "type": "string",
+          "description": "'auto' (mp4 for a frame range, png for one frame) | 'png' | 'exr' (16-bit linear frames for compositing) | 'mp4' (H.264) | 'webm' (VP9) | 'prores' (Apple ProRes 422 HQ .mov, for editing) | 'gif' | 'webp' (animated, at most 960 px wide; good for chat and web)."
+        },
+        "camera": {
+          "default": "",
+          "title": "Camera",
+          "type": "string",
+          "description": "Name of the camera object to render from (default: the scene's active camera, or an automatic camera if there is none). Ignored with orbit=True; not combinable with cameras."
+        },
+        "environment": {
+          "default": "",
+          "title": "Environment",
+          "type": "string",
+          "description": "Lighting preset: '' (the scene's own world), 'studio', 'sunset', 'overcast' or 'night' (bundled HDRIs; a good first render for scenes without lighting work), or 'compare' (preview only: all four in one labeled 2x2 image, to pick one)."
+        },
+        "environment_strength": {
+          "default": 1.0,
+          "title": "Environment Strength",
+          "type": "number",
+          "description": "Multiplier for the HDRI preset's brightness (default 1.0)."
+        },
+        "environment_visible": {
+          "default": true,
+          "title": "Environment Visible",
+          "type": "boolean",
+          "description": "False hides the HDRI from the camera (flat grey backdrop, HDRI lighting only)."
+        },
+        "blender": {
+          "default": "",
+          "title": "Blender",
+          "type": "string",
+          "description": "Blender version: '' (default: a .blend opens with the version it was saved in, other scenes with 5.0) or '5.0' / '5.2' (also '4.5', '4.2', '3.6'; a script that stops on Blender 5 because of an older API is rendered again on those automatically) to choose."
+        },
+        "asset_urls": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Asset Urls",
+          "description": "Extra files sent with the scene: https links (textures, glTF .bin) or 'polyhaven:<id>' CC0 assets from asset_search ('polyhaven:<id>@2k' for 2k textures). A .blend finds them through relative paths (same folder); a script through os.environ['JR_ASSETS_DIR'] or the jr_assets helpers."
+        },
+        "orbit": {
+          "default": false,
+          "title": "Orbit",
+          "type": "boolean",
+          "description": "True: turntable; an orbit camera circles the scene once (the scene's own camera is not used). Flat floors and walls are ignored when framing. A preview without frames shows 0/90/180/270 degrees; a final without frame_end renders the whole turn as an MP4. Best for imported models and product videos."
+        },
+        "orbit_frames": {
+          "default": 24,
+          "title": "Orbit Frames",
+          "type": "integer",
+          "description": "Number of frames for one full turn (default 24)."
+        },
+        "orbit_elevation": {
+          "default": 18.0,
+          "title": "Orbit Elevation",
+          "type": "number",
+          "description": "Orbit camera elevation in degrees (default 18)."
+        },
+        "orbit_target": {
+          "default": "",
+          "title": "Orbit Target",
+          "type": "string",
+          "description": "Object name or 'x,y,z' to centre the orbit on (default: the scene's main objects)."
+        },
+        "orbit_distance": {
+          "default": 1.0,
+          "title": "Orbit Distance",
+          "type": "number",
+          "description": "Multiplier for the orbit camera distance (default 1.0)."
+        },
+        "engine": {
+          "default": "",
+          "title": "Engine",
+          "type": "string",
+          "description": "'' or 'cycles' (path tracing, default) | 'eevee' (real-time rasterizer: about half the per-frame cost on animations of a few dozen frames or more; each job pays about 7 s of shader compilation, so previews stay on Cycles)."
+        },
+        "transparent": {
+          "default": false,
+          "title": "Transparent",
+          "type": "boolean",
+          "description": "True renders on a transparent background (alpha) for product shots and overlays; png / exr / webm / gif / webp keep it, mp4 and prores cannot. The preview sheet shows it over dark grey."
+        },
+        "notify_url": {
+          "default": "",
+          "title": "Notify Url",
+          "type": "string",
+          "description": "Optional https URL that receives one JSON POST when the final render finishes (job.done / job.failed, with download links), so nobody has to poll."
+        },
+        "cameras": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cameras",
+          "description": "Several camera object names (up to 8) rendered from the same frame in one job: the preview tiles them in one labeled sheet, the final returns one PNG/EXR per camera (camera_files maps names to files). For product shots from fixed angles. Not combinable with orbit, environment='compare' or camera."
+        },
+        "preset": {
+          "default": "",
+          "title": "Preset",
+          "type": "string",
+          "description": "Purpose preset: 'product' (4 studio shots at 0/90/180/270 deg on a plain backdrop; the final gives 4 PNGs at 1440x1440), 'turntable' (one full turn as an MP4, studio light, plain backdrop), 'animation' (the scene's own camera, lights and frame range; the scene is read first when the range is unknown), or '' (none). It fills what you do not pass; environment, orbit_frames, width/height and the frames still win when given."
+        },
+        "max_yen": {
+          "default": -1,
+          "title": "Max Yen",
+          "type": "integer",
+          "description": "Ceiling for this job in JPY (-1 = none): the job is refused before anything is reserved when its reservation would exceed it. 0 means 'only if it fits the free time'."
+        },
+        "idempotency_key": {
+          "default": "",
+          "title": "Idempotency Key",
+          "type": "string",
+          "description": "Any string up to 128 characters that identifies this order: sending the same key again returns the first job instead of rendering twice (a different body with the same key is refused)."
+        },
+        "storage_project": {
+          "default": "",
+          "title": "Storage Project",
+          "type": "string",
+          "description": "JANCTION Storage project id to continue (from a Storage project's Render again); the result is saved into that project when saving to Storage is on for this key, otherwise ignored."
+        }
+      },
+      "type": "object",
+      "title": "render_finalArguments"
+    },
+    "name": "render_final",
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "title": "render_finalOutput"
+    },
+    "title": "Render final frames or video"
+  },
+  {
+    "_meta": {
+      "ui": {
+        "resourceUri": "ui://janction-render/app.html"
+      },
+      "ui/resourceUri": "ui://janction-render/app.html"
+    },
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": true,
+      "title": "Download links"
+    },
+    "description": "Get the download links of a job (no key needed, valid about 24 hours; call again for fresh links while the files are kept, 24 h after last use or 7 days, normally, for paid keys) and show them to the user; in a terminal, fetch them with curl -o. A finished preview also comes back as an inline image. wait_seconds > 0 first waits for the job (the service waits at most 50 s per call; call again while it is still running). only picks the files: 'output' (default: the MP4 or the preview sheet, plus the first frames), 'mp4', 'sheet', 'frames' or 'all'.",
+    "inputSchema": {
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string",
+          "description": "The job_id returned by render_preview or render_final (j_...; a long final split into parts is b_...). Only this key's jobs; in render_status, leave it empty to list them."
+        },
+        "wait_seconds": {
+          "default": 0,
+          "title": "Wait Seconds",
+          "type": "integer",
+          "description": "Wait for the job to finish before returning the links (0 = do not wait). The service waits at most 50 s per call; call again while the job is still running."
+        },
+        "only": {
+          "default": "output",
+          "title": "Only",
+          "type": "string",
+          "description": "'all' (every frame plus output.mp4 / sheet.png) | 'mp4' | 'frames' | 'sheet' | 'output' (the MP4 or the sheet only)."
+        }
+      },
+      "required": [
+        "job_id"
+      ],
+      "type": "object",
+      "title": "render_downloadArguments"
+    },
+    "name": "render_download",
+    "title": "Download links"
+  },
+  {
+    "_meta": {
+      "ui": {
+        "resourceUri": "ui://janction-render/app.html"
+      },
+      "ui/resourceUri": "ui://janction-render/app.html"
+    },
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": true,
+      "title": "Render status and ETA"
+    },
+    "description": "Check a render job: status (queued / running / done / failed / canceled), frames done, the ETA (eta.human, including queue wait), files ready, Blender warnings, and the error with the log tail if it failed. Use it to report progress to the user; render_download(job_id, wait_seconds=45) waits and returns the links in one call. Without job_id it lists this key's recent jobs and the scene_ids still kept, to pick up earlier work in a new conversation.",
+    "inputSchema": {
+      "properties": {
+        "job_id": {
+          "default": "",
+          "title": "Job Id",
+          "type": "string",
+          "description": "The job_id returned by render_preview or render_final (j_...; a long final split into parts is b_...). Only this key's jobs; in render_status, leave it empty to list them."
+        }
+      },
+      "type": "object",
+      "title": "render_statusArguments"
+    },
+    "name": "render_status",
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "title": "render_statusOutput"
+    },
+    "title": "Render status and ETA"
+  },
+  {
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": false,
+      "title": "Read scene info"
+    },
+    "description": "Read a Blender scene without rendering (a few seconds, no GPU time): cameras and the active one, frame range and fps, resolution, objects by type, lights, materials, whether it is animated, and missing linked files that would render pink. Use it for a .blend you did not write, or to check what a bpy script built. Returns scene_id; pass it to render_preview and render_final instead of sending the scene again.",
+    "inputSchema": {
+      "properties": {
+        "scene_script": {
+          "default": "",
+          "title": "Scene Script",
+          "type": "string",
+          "description": "The scene as bpy Python code (text). No file and no local Blender needed; the service runs it in Blender 5.0 (5.2 with blender='5.2'). Blender 5.0 API notes: materials are node-based, so set a colour on the Principled BSDF (mat.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value = (r, g, b, 1)); mat.diffuse_color only affects the viewport; do not set Material.use_nodes. Animate with obj.keyframe_insert() (action.fcurves no longer exists; set bpy.context.preferences.edit.keyframe_new_interpolation_type = 'LINEAR' first for constant speed). Build the scene, camera and frame range only; leave resolution, samples and denoising to the service. Helpers: `import jr_assets`, then jr_assets.frame_camera(margin=1.1) points the camera at every object and fits them in the frame; jr_assets.import_model('<id>'), jr_assets.material('<id>') and jr_assets.world_hdri('<id>') use Poly Haven assets passed in asset_urls."
+        },
+        "scene_url": {
+          "default": "",
+          "title": "Scene Url",
+          "type": "string",
+          "description": "https link to a .blend, a .py script or a 3D file (.glb/.gltf/.fbx/.usd/.obj/.stl/.ply/.abc); the service fetches it (e.g. the sample https://render.janction.jp/samples/cube_scene.py, or a 12-hour /upload link). A .gltf or .obj also brings its .bin / .mtl / textures from the same folder."
+        },
+        "scene_id": {
+          "default": "",
+          "title": "Scene Id",
+          "type": "string",
+          "description": "scene_id returned by an earlier call (reuses the uploaded scene without sending it again)."
+        },
+        "asset_urls": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Asset Urls",
+          "description": "Extra files sent with the scene: https links (textures, glTF .bin) or 'polyhaven:<id>' CC0 assets from asset_search ('polyhaven:<id>@2k' for 2k textures). A .blend finds them through relative paths (same folder); a script through os.environ['JR_ASSETS_DIR'] or the jr_assets helpers."
+        },
+        "blender": {
+          "default": "",
+          "title": "Blender",
+          "type": "string",
+          "description": "Blender version: '' (default: a .blend opens with the version it was saved in, other scenes with 5.0) or '5.0' / '5.2' (also '4.5', '4.2', '3.6'; a script that stops on Blender 5 because of an older API is rendered again on those automatically) to choose."
+        }
+      },
+      "type": "object",
+      "title": "scene_infoArguments"
+    },
+    "name": "scene_info",
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "title": "scene_infoOutput"
+    },
+    "title": "Read scene info"
+  },
+  {
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": true,
+      "title": "Estimate render time"
+    },
+    "description": "Estimate a render before starting it (no GPU time): GPU seconds, queue wait, the wall-clock time as text (estimate.human, e.g. 'about 3 minutes') and whether it fits the free GPU time left (the welcome credit, or 2 preview GPU-minutes a day after it) and the size limits. Call it before render_final when the time or quota is uncertain, the job is longer than about 24 frames or above 720p, or the user asks how long it takes; tell the user the result. With scene_id the estimate uses measured render times and returns calibration.final_path_measured. If false, treat it as preliminary: run a short contiguous final-path test and estimate again before the full animation. It also says when to split a job.",
+    "inputSchema": {
+      "properties": {
+        "scene_id": {
+          "default": "",
+          "title": "Scene Id",
+          "type": "string",
+          "description": "scene_id returned by an earlier call (reuses the uploaded scene without sending it again)."
+        },
+        "kind": {
+          "default": "final",
+          "title": "Kind",
+          "type": "string",
+          "description": "'final' (frame_start..frame_end at width x height, samples) or 'preview' (frames like '1-24')."
+        },
+        "frame_start": {
+          "default": 1,
+          "title": "Frame Start",
+          "type": "integer",
+          "description": "First frame to render (inclusive)."
+        },
+        "frame_end": {
+          "default": 1,
+          "title": "Frame End",
+          "type": "integer",
+          "description": "Last frame to render (inclusive); equal to frame_start for a single image. With orbit=True and no frame_end, one full turn is rendered."
+        },
+        "frames": {
+          "default": "",
+          "title": "Frames",
+          "type": "string",
+          "description": "Preview frames: '' = frame 1; '12' = one frame; '1,8,16,24' or '1-24' = up to 4 frames tiled in one labeled image (to judge camera motion and animation; same GPU time as one 720p frame)."
+        },
+        "width": {
+          "default": 1920,
+          "title": "Width",
+          "type": "integer",
+          "description": "Output width in pixels (previews are capped at 1280x720 keeping the aspect ratio; a final frame can have at most 1920x1080 pixels on free time, 3840x2160 on prepaid credit)."
+        },
+        "height": {
+          "default": 1080,
+          "title": "Height",
+          "type": "integer",
+          "description": "Output height in pixels (previews are capped at 1280x720 keeping the aspect ratio; a final frame can have at most 1920x1080 pixels on free time, 3840x2160 on prepaid credit)."
+        },
+        "samples": {
+          "default": 128,
+          "title": "Samples",
+          "type": "integer",
+          "description": "Cycles samples per pixel (preview: up to 32, default 16; final: default 128)."
+        },
+        "cameras": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cameras",
+          "description": "Several camera object names (up to 8) rendered from the same frame in one job: the preview tiles them in one labeled sheet, the final returns one PNG/EXR per camera (camera_files maps names to files). For product shots from fixed angles. Not combinable with orbit, environment='compare' or camera."
+        },
+        "preset": {
+          "default": "",
+          "title": "Preset",
+          "type": "string",
+          "description": "Purpose preset: 'product' (4 studio shots at 0/90/180/270 deg on a plain backdrop; the final gives 4 PNGs at 1440x1440), 'turntable' (one full turn as an MP4, studio light, plain backdrop), 'animation' (the scene's own camera, lights and frame range; the scene is read first when the range is unknown), or '' (none). It fills what you do not pass; environment, orbit_frames, width/height and the frames still win when given."
+        }
+      },
+      "type": "object",
+      "title": "render_estimateArguments"
+    },
+    "name": "render_estimate",
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "title": "render_estimateOutput"
+    },
+    "title": "Estimate render time"
+  },
+  {
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": true,
+      "title": "Service status"
+    },
+    "description": "Check the connection and the service before rendering (read-only, no GPU time, no charge): the server URL, whether GPU workers are online, the queue length and expected wait, and this key's usage. Use it before the first render or when renders seem stuck, and to decide whether to route a render here: workers_available > 0 means a preview comes back in seconds; gated means the GPU is lent out and gate says how long the wait usually is. It runs as the connected account (OAuth or the API key in the connector). Every call is rate-limited per key; a 429 response carries retry_after_s, wait that long. diagnose.tell_user says in plain words whether the connection, the key, the free credit and the GPUs are fine and what the last failed render said; relay it when the user asks why something does not work.",
+    "inputSchema": {
+      "properties": {},
+      "type": "object",
+      "title": "render_infoArguments"
+    },
+    "name": "render_info",
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "title": "render_infoOutput"
+    },
+    "title": "Service status"
+  },
+  {
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": true,
+      "title": "Search CC0 assets"
+    },
+    "description": "Find free CC0 3D models, PBR textures or HDRIs on Poly Haven by words ('wooden chair', 'forest hdri') to furnish a scene without uploading files; no GPU time. For product shots of something the user has no model for: asset_search('<item>'), then render_preview(scene_script='import jr_assets; jr_assets.import_model(\"<id>\")', asset_urls=['polyhaven:<id>'], preset='product') gives 4 studio shots on a plain backdrop (import_model removes Blender's untouched startup cube first). Each result has a spec 'polyhaven:<id>' to pass in asset_urls, its size in metres and the entry file. In the scene script: import jr_assets, then jr_assets.import_model('<id>', location=(x, y, z), scale=1.0) returns the objects, jr_assets.material('<id>') builds a material and jr_assets.apply(obj, mat) assigns it, jr_assets.world_hdri('<id>', strength=1.0) lights the world. 'polyhaven:<id>@2k' fetches 2k textures (1k by default).",
+    "inputSchema": {
+      "properties": {
+        "query": {
+          "title": "Query",
+          "type": "string",
+          "description": "Words to search Poly Haven for (name, tags, category), e.g. 'wooden chair' or 'forest hdri'."
+        },
+        "kind": {
+          "default": "models",
+          "title": "Kind",
+          "type": "string",
+          "description": "'models' (default) | 'textures' | 'hdris'."
+        }
+      },
+      "required": [
+        "query"
+      ],
+      "type": "object",
+      "title": "asset_searchArguments"
+    },
+    "name": "asset_search",
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "title": "asset_searchOutput"
+    },
+    "title": "Search CC0 assets"
+  },
+  {
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": false,
+      "openWorldHint": true,
+      "readOnlyHint": false,
+      "title": "Share a render"
+    },
+    "description": "Publish a finished render as a public web page anyone with the link can open (for X, Discord or a client): the image or video, the render settings, an optional title and note, the user's request in their words (prompt), and the bpy script only if include_script=True. The page keeps its own copy of the result after the job's files expire, until render_unshare. listed=True only asks to appear in the public gallery; the operator reviews it first. Public: ask the user before sharing and return the url to them. Only the key that rendered the job can share it.",
+    "inputSchema": {
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string",
+          "description": "The job_id returned by render_preview or render_final (j_...; a long final split into parts is b_...). Only this key's jobs; in render_status, leave it empty to list them."
+        },
+        "title": {
+          "default": "",
+          "title": "Title",
+          "type": "string",
+          "description": "Title shown on the public share page (optional)."
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string",
+          "description": "A sentence shown under the image on the share page (optional)."
+        },
+        "include_script": {
+          "default": false,
+          "title": "Include Script",
+          "type": "boolean",
+          "description": "True also publishes the bpy script on the share page."
+        },
+        "listed": {
+          "default": false,
+          "title": "Listed",
+          "type": "boolean",
+          "description": "True asks for the page to appear in the public gallery after the operator reviews it."
+        },
+        "prompt": {
+          "default": "",
+          "title": "Prompt",
+          "type": "string",
+          "description": "What the user asked you, in their words (shown as 'what the user asked the agent')."
+        }
+      },
+      "required": [
+        "job_id"
+      ],
+      "type": "object",
+      "title": "render_shareArguments"
+    },
+    "name": "render_share",
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "title": "render_shareOutput"
+    },
+    "title": "Share a render"
+  },
+  {
+    "annotations": {
+      "destructiveHint": true,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": false,
+      "title": "Unshare a render"
+    },
+    "description": "Take down the public share page of a job made with render_share. Effects: the page URL stops working, its copy of the image or video, the shared script and the shown request are deleted, and the page leaves the public gallery. This cannot be undone: sharing again makes a new page with a new URL. The job's own files are not touched (they expire on their usual schedule). Only the key that shared the job can take the page down; a job without a share page returns not_found.",
+    "inputSchema": {
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string",
+          "description": "The job_id returned by render_preview or render_final (j_...; a long final split into parts is b_...). Only this key's jobs; in render_status, leave it empty to list them."
+        }
+      },
+      "required": [
+        "job_id"
+      ],
+      "type": "object",
+      "title": "render_unshareArguments"
+    },
+    "name": "render_unshare",
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "title": "render_unshareOutput"
+    },
+    "title": "Unshare a render"
+  },
+  {
+    "annotations": {
+      "destructiveHint": true,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": false,
+      "title": "Cancel render"
+    },
+    "description": "Stop a queued or running render job of this key (a j_... job, or a b_... job split into parts, which stops every part). Effects: queued frames are dropped; frames already rendered are charged and stay downloadable until the job expires; the rest of the GPU time held for the job is returned to the key at once. It cannot be undone or resumed: to render again, call render_final again (a new job). A job that is already done, failed or canceled is returned unchanged, and a job whose frames are all rendered and is being assembled into the video cannot be stopped (nothing more is charged). Only the key that started the job can stop it; any other job_id returns not_found. Ask the user before cancelling a render they asked for.",
+    "inputSchema": {
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string",
+          "description": "The job_id returned by render_preview or render_final (j_...; a long final split into parts is b_...). Only this key's jobs; in render_status, leave it empty to list them."
+        }
+      },
+      "required": [
+        "job_id"
+      ],
+      "type": "object",
+      "title": "render_cancelArguments"
+    },
+    "name": "render_cancel",
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "title": "render_cancelOutput"
+    },
+    "title": "Cancel render"
+  },
+  {
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": true,
+      "title": "Quota and billing"
+    },
+    "description": "Check what this key can still render for free and its credit (no GPU time): the free GPU time left and when it expires or resets, the balance, the price per GPU-second, any pending checkout link, and the offers that apply. Relay tell_user to the user in their language when it is present.",
+    "inputSchema": {
+      "properties": {},
+      "type": "object",
+      "title": "billingArguments"
+    },
+    "name": "billing",
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "title": "billingOutput"
+    },
+    "title": "Quota and billing"
+  },
+  {
+    "_meta": {
+      "openai/fileParams": [
+        "file"
+      ]
+    },
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": false,
+      "title": "Use an attached file"
+    },
+    "description": "Use a file the user attached in this chat (.blend, glTF/GLB, FBX, USD, OBJ, STL or a bpy .py script): JANCTION\n    fetches it and makes it a scene of this account, and returns scene_id. Then call scene_info(scene_id=...) to read the\n    cameras and frame range, and render_preview(scene_id=...) to see it. Nothing is rendered or charged here. A large file\n    can take a few minutes: if the reply says status 'importing', call render_import_file again with the same file after\n    about 30 seconds (the download continues and is not started again). If the attachment cannot be fetched, ask the user\n    to attach it again or to upload it at the /upload page.",
+    "inputSchema": {
+      "properties": {
+        "file": {
+          "$ref": "#/$defs/AttachedFile"
+        }
+      },
+      "required": [
+        "file"
+      ],
+      "type": "object",
+      "$defs": {
+        "AttachedFile": {
+          "description": "ChatGPT \u304c\u6e21\u3059\u6dfb\u4ed8\u306e\u5f62\uff08OpenAI \u306e\u6c7a\u307e\u308a: download_url \u3068 file_id \u306f\u5fc5\u9808\u3001mime_type \u3068 file_name \u306f\u5ba3\u8a00\u3060\u3051\u3067\u4efb\u610f\uff09\u3002",
+          "properties": {
+            "download_url": {
+              "description": "temporary https link to the file, given by the chat app",
+              "title": "Download Url",
+              "type": "string"
+            },
+            "file_id": {
+              "description": "the chat app's id of the file",
+              "title": "File Id",
+              "type": "string"
+            },
+            "mime_type": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "media type of the file, if known",
+              "title": "Mime Type"
+            },
+            "file_name": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "original file name, if known",
+              "title": "File Name"
+            }
+          },
+          "required": [
+            "download_url",
+            "file_id"
+          ],
+          "title": "AttachedFile",
+          "type": "object"
+        }
+      },
+      "title": "render_import_fileArguments"
+    },
+    "name": "render_import_file",
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "type": "object",
+      "title": "render_import_fileOutput"
+    },
+    "title": "Use an attached file"
+  }
+]

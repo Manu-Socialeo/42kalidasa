@@ -1,0 +1,17 @@
+{
+  "api_key": "jr_1c81e6e4a64145879b802288d0056f26",
+  "prefix": "jr_1c81e6e",
+  "label": "",
+  "created_at": 1793294324.336615,
+  "note": "temporary key; keep it. Send it as X-API-Key.",
+  "reuse_hint": {
+    "keys_from_this_network_24h": 2,
+    "message": "A key does not expire: create it once, keep it (for example in JANCTION_RENDER_API_KEY) and send it as X-API-Key on every call; GET /v1/me checks a key you already have.",
+    "recommended_action": "REUSE_KEY"
+  },
+  "large_files": {
+    "single_request_max_mb": 100,
+    "how": "POST /v1/files carries one request of up to 100 MB; a larger body is refused by the CDN with an HTML 413 before it reaches the API. For a larger file: run uvx janction-render preview <file> (the CLI sends it in parts and resumes), or send it in parts yourself with POST /v1/uploads (tus 1.0: POST with Upload-Length and Upload-Metadata, PATCH parts of 32 MiB with Upload-Offset, then GET it for the scene_id; GET /v1/uploads/limits gives the sizes), or pass an https link as scene_url.",
+    "do_not_shrink": "Do not decimate, strip textures from or re-save the user's scene to make it fit: the render would no longer be what they made. If a smaller file seems the only way, ask them first."
+  }
+}
