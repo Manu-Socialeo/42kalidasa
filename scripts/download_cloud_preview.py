@@ -18,3 +18,4 @@ if img is not None:
     print(f"SUCCESS: Decoded image {w}x{h} with {c} channels.")
 else:
     print("FAILED to decode image with cv2.")
+

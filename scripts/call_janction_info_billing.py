@@ -36,3 +36,4 @@ print(json.dumps(info_res, indent=2))
 print("\n=== CALLING billing ===")
 billing_res = call_mcp_tool("billing")
 print(json.dumps(billing_res, indent=2))
+

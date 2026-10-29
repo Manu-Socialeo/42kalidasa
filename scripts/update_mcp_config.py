@@ -33,3 +33,4 @@ with open(config_path, "w", encoding="utf-8") as f:
     json.dump(cfg, f, indent=2)
 
 print("Updated mcp_config.json with janction-render while preserving other servers!")
+

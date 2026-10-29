@@ -7,18 +7,18 @@
   <meta name="description" content="42 Kalidasa, Site No. 42 Kalidasa Road, Block-III Jayalakshmipuram, Mysuru. An iconic 22-level residential estate featuring 4BHK sanctuaries, cantilevered curved balconies, and rooftop horizon amenities.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg-dark: #07080a;
-      --bg-card: #0d0f14;
+      --bg-dark: #08090c;
+      --bg-card: #101218;
       --text-white: #ffffff;
-      --text-muted: #8e95a5;
+      --text-muted: #8b92a4;
+      --text-dim: #545b6d;
       --accent-blue: #0088cc;
-      --border-subtle: rgba(255, 255, 255, 0.12);
-      --font-display: 'Syne', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --border-subtle: rgba(255, 255, 255, 0.1);
+      --font-grotesque: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     }
 
     * {
@@ -30,7 +30,7 @@
     html, body {
       background-color: var(--bg-dark);
       color: var(--text-white);
-      font-family: var(--font-sans);
+      font-family: var(--font-grotesque);
       overflow-x: hidden;
       scroll-behavior: smooth;
       -webkit-font-smoothing: antialiased;
@@ -63,8 +63,8 @@
       height: 100vh;
       z-index: 2;
       pointer-events: none;
-      background: radial-gradient(circle at center, transparent 40%, rgba(7, 8, 10, 0.75) 100%),
-                  linear-gradient(to bottom, rgba(7, 8, 10, 0.6) 0%, transparent 25%, transparent 75%, rgba(7, 8, 10, 0.95) 100%);
+      background: radial-gradient(circle at 60% 45%, transparent 35%, rgba(8, 9, 12, 0.65) 100%),
+                  linear-gradient(to bottom, rgba(8, 9, 12, 0.5) 0%, transparent 20%, transparent 80%, rgba(8, 9, 12, 0.95) 100%);
     }
 
     /* Header Nav */
@@ -73,12 +73,12 @@
       top: 0;
       left: 0;
       width: 100%;
-      padding: 28px 48px;
+      padding: 32px 56px;
       z-index: 20;
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      mix-blend-mode: normal;
+      align-items: center;
+      background: linear-gradient(to bottom, rgba(8, 9, 12, 0.75), transparent);
     }
 
     .nav-brand {
@@ -87,20 +87,19 @@
     }
 
     .brand-title {
-      font-family: var(--font-display);
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 800;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--text-white);
     }
 
     .brand-loc {
-      font-size: 11px;
-      letter-spacing: 0.15em;
+      font-size: 10px;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--text-muted);
-      margin-top: 4px;
+      margin-top: 3px;
     }
 
     .nav-links {
@@ -112,9 +111,9 @@
     .nav-links a {
       color: var(--text-white);
       text-decoration: none;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 600;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       opacity: 0.85;
       transition: opacity 0.2s ease;
@@ -128,11 +127,11 @@
       background: rgba(255, 255, 255, 0.08);
       border: 1px solid var(--border-subtle);
       color: var(--text-white);
-      padding: 10px 20px;
+      padding: 9px 20px;
       border-radius: 40px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       cursor: pointer;
       backdrop-filter: blur(12px);
@@ -144,7 +143,7 @@
       border-color: #fff;
     }
 
-    /* Hero Section (Replicating Reference Video) */
+    /* Hero Section (Faithfully matching Reference Video) */
     .hero-viewport {
       position: relative;
       width: 100vw;
@@ -154,29 +153,29 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 100px 48px 48px;
+      padding: 120px 56px 64px;
     }
 
     .hero-top-left {
       position: absolute;
-      top: 110px;
-      left: 48px;
+      top: 130px;
+      left: 56px;
       max-width: 320px;
     }
 
     .hero-top-left p {
-      font-size: 12px;
-      line-height: 1.5;
+      font-size: 11px;
+      line-height: 1.55;
       font-weight: 600;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       color: rgba(255, 255, 255, 0.85);
     }
 
     .hero-top-left .sub-tag {
-      font-size: 10px;
+      font-size: 9px;
       color: var(--text-muted);
-      letter-spacing: 0.2em;
+      letter-spacing: 0.25em;
       text-transform: uppercase;
       margin-top: 8px;
       display: block;
@@ -184,32 +183,31 @@
 
     .hero-top-right {
       position: absolute;
-      top: 90px;
-      right: 48px;
+      top: 110px;
+      right: 56px;
       text-align: right;
     }
 
     .hero-top-right h1 {
-      font-family: var(--font-display);
-      font-size: 8vw;
-      line-height: 0.85;
+      font-size: clamp(48px, 6.5vw, 108px);
+      line-height: 0.88;
       font-weight: 900;
       letter-spacing: -0.04em;
       text-transform: uppercase;
       color: #ffffff;
-      text-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+      text-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
     }
 
     .hero-mid-left {
       position: absolute;
       top: 48%;
-      left: 48px;
+      left: 56px;
       transform: translateY(-50%);
     }
 
     .hero-mid-left .tag {
-      font-size: 11px;
-      letter-spacing: 0.2em;
+      font-size: 10px;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
       color: var(--accent-blue);
       font-weight: 700;
@@ -218,43 +216,41 @@
     }
 
     .hero-mid-left h2 {
-      font-family: var(--font-display);
-      font-size: 2.5vw;
-      line-height: 0.95;
-      font-weight: 800;
-      letter-spacing: -0.02em;
+      font-size: clamp(24px, 2.8vw, 42px);
+      line-height: 0.94;
+      font-weight: 900;
+      letter-spacing: -0.03em;
       text-transform: uppercase;
       color: #ffffff;
     }
 
     .hero-bottom-left {
       position: absolute;
-      bottom: 48px;
-      left: 48px;
+      bottom: 56px;
+      left: 56px;
     }
 
     .hero-giant-title {
-      font-family: var(--font-display);
-      font-size: 7vw;
-      line-height: 0.85;
+      font-size: clamp(32px, 4vw, 64px);
+      line-height: 0.9;
       font-weight: 900;
-      letter-spacing: -0.04em;
+      letter-spacing: -0.03em;
       text-transform: uppercase;
       color: #ffffff;
     }
 
     .hero-bottom-right {
       position: absolute;
-      bottom: 48px;
-      right: 48px;
-      max-width: 380px;
+      bottom: 56px;
+      right: 56px;
+      max-width: 360px;
       text-align: right;
     }
 
     .hero-bottom-right p {
-      font-size: 11px;
+      font-size: 10px;
       line-height: 1.6;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       font-weight: 600;
       color: rgba(255, 255, 255, 0.75);
@@ -263,7 +259,7 @@
     /* Scroll Spacer for 3D Scrubbing */
     .scroll-track {
       position: relative;
-      height: 450vh;
+      height: 420vh;
       z-index: 3;
     }
 
@@ -274,22 +270,22 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 25;
-      background: rgba(13, 15, 20, 0.85);
+      background: rgba(16, 18, 24, 0.85);
       backdrop-filter: blur(16px);
       border: 1px solid var(--border-subtle);
-      padding: 10px 24px;
+      padding: 8px 20px;
       border-radius: 40px;
       display: flex;
       align-items: center;
       gap: 16px;
-      width: min(90vw, 520px);
+      width: min(85vw, 460px);
     }
 
     .scrubber-hud input[type="range"] {
       flex: 1;
       accent-color: var(--accent-blue);
       cursor: pointer;
-      height: 4px;
+      height: 3px;
     }
 
     .scrubber-counter {
@@ -310,18 +306,18 @@
     }
 
     .section-dark {
-      background: #07080a;
-      padding: 120px 48px;
+      background: #08090c;
+      padding: 120px 56px;
       position: relative;
       border-top: 1px solid var(--border-subtle);
     }
 
     .section-header {
-      margin-bottom: 64px;
+      margin-bottom: 56px;
     }
 
     .section-label {
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.25em;
       text-transform: uppercase;
@@ -331,10 +327,9 @@
     }
 
     .section-title {
-      font-family: var(--font-display);
-      font-size: clamp(32px, 5vw, 64px);
-      line-height: 0.95;
-      font-weight: 800;
+      font-size: clamp(32px, 4.5vw, 56px);
+      line-height: 0.94;
+      font-weight: 900;
       letter-spacing: -0.03em;
       text-transform: uppercase;
       color: #ffffff;
@@ -343,38 +338,52 @@
 
     .section-desc {
       font-size: 15px;
-      line-height: 1.6;
+      line-height: 1.65;
       color: var(--text-muted);
       max-width: 650px;
       margin-top: 20px;
     }
 
-    /* Cards Grid (Replicating Ref Video Amenities / Vision) */
+    /* Cards Grid with Thumbnails */
     .grid-amenities {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
     }
 
     .amenity-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: 12px;
-      padding: 32px;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      min-height: 280px;
       transition: transform 0.3s ease, border-color 0.3s ease;
     }
 
     .amenity-card:hover {
       transform: translateY(-4px);
-      border-color: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .card-thumb {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .card-content {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
     }
 
     .card-num {
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 700;
       color: var(--accent-blue);
       letter-spacing: 0.15em;
@@ -382,13 +391,12 @@
     }
 
     .card-head {
-      font-family: var(--font-display);
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 800;
       letter-spacing: -0.01em;
       text-transform: uppercase;
       color: #fff;
-      margin: 16px 0 12px;
+      margin: 12px 0 10px;
     }
 
     .card-body {
@@ -407,8 +415,7 @@
     }
 
     .card-stat .val {
-      font-family: var(--font-display);
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 800;
       color: #fff;
     }
@@ -423,8 +430,8 @@
     /* Visual Showcase / Verification Gallery */
     .gallery-showcase {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 24px;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 28px;
       margin-top: 48px;
     }
 
@@ -453,16 +460,15 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      padding: 24px;
-      background: linear-gradient(to top, rgba(7, 8, 10, 0.95), transparent);
+      padding: 24px 32px;
+      background: linear-gradient(to top, rgba(8, 9, 12, 0.95), transparent);
     }
 
     .gallery-meta h4 {
-      font-family: var(--font-display);
       font-size: 18px;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
     }
 
     .gallery-meta p {
@@ -471,17 +477,16 @@
       margin-top: 4px;
     }
 
-    /* Brand Statement (Section 5 from Video) */
+    /* Brand Statement */
     .statement-section {
-      padding: 160px 48px;
+      padding: 160px 56px;
       text-align: center;
       background: #000;
       border-top: 1px solid var(--border-subtle);
     }
 
     .statement-brand {
-      font-family: var(--font-display);
-      font-size: 14px;
+      font-size: 12px;
       letter-spacing: 0.3em;
       text-transform: uppercase;
       color: var(--accent-blue);
@@ -491,13 +496,12 @@
     }
 
     .statement-quote {
-      font-family: var(--font-display);
-      font-size: clamp(28px, 4.5vw, 56px);
+      font-size: clamp(28px, 4.2vw, 52px);
       line-height: 1.1;
-      font-weight: 800;
-      letter-spacing: -0.02em;
+      font-weight: 900;
+      letter-spacing: -0.03em;
       text-transform: uppercase;
-      max-width: 1000px;
+      max-width: 960px;
       margin: 0 auto;
     }
 
@@ -508,7 +512,7 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: rgba(7, 8, 10, 0.92);
+      background: rgba(8, 9, 12, 0.94);
       backdrop-filter: blur(24px);
       z-index: 100;
       display: flex;
@@ -517,7 +521,7 @@
       opacity: 0;
       visibility: hidden;
       transition: all 0.3s ease;
-      padding: 24px;
+      padding: 32px;
     }
 
     .modal-backdrop.open {
@@ -526,7 +530,7 @@
     }
 
     .modal-window {
-      background: #0d0f14;
+      background: #101218;
       border: 1px solid var(--border-subtle);
       border-radius: 16px;
       width: min(95vw, 1100px);
@@ -547,13 +551,13 @@
       height: 36px;
       border-radius: 50%;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 18px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    /* Responsive adjustments */
+    /* Responsive */
     @media (max-width: 768px) {
       header {
         padding: 20px 24px;
@@ -562,10 +566,10 @@
         padding: 80px 24px 24px;
       }
       .hero-top-right h1 {
-        font-size: 14vw;
+        font-size: 13vw;
       }
       .hero-giant-title {
-        font-size: 13vw;
+        font-size: 11vw;
       }
       .hero-mid-left h2 {
         font-size: 5vw;
@@ -605,7 +609,7 @@
     </div>
   </header>
 
-  <!-- Hero Layer (Matching Reference Video Layout & Copy) -->
+  <!-- Hero Layer (Faithfully matching Reference Video) -->
   <section class="hero-viewport">
     <div class="hero-top-left">
       <p>42 KALIDASA ROAD<br>BLOCK-III, JAYALAKSHMIPURAM<br>MYSURU, KARNATAKA</p>
@@ -654,42 +658,54 @@
 
       <div class="grid-amenities">
         <div class="amenity-card">
-          <span class="card-num">01 / ENTRANCE</span>
-          <h3 class="card-head">Double-Height Grand Lobby</h3>
-          <p class="card-body">A soaring 4.50-meter clear reception portal featuring floor-to-ceiling glass reveals, concierge gallery, waiting lounge, and perimeter landscaped drop-off canopy.</p>
-          <div class="card-stat">
-            <span class="val">+98.30 M</span>
-            <span class="lbl">Finished Plinth Level</span>
+          <img src="interior_living_render.png" alt="Grand Lobby & Interior Finishes" class="card-thumb">
+          <div class="card-content">
+            <span class="card-num">01 / ENTRANCE</span>
+            <h3 class="card-head">Double-Height Grand Lobby</h3>
+            <p class="card-body">A soaring 4.50-meter clear reception portal featuring floor-to-ceiling glass reveals, concierge gallery, waiting lounge, and perimeter landscaped drop-off canopy.</p>
+            <div class="card-stat">
+              <span class="val">+98.30 M</span>
+              <span class="lbl">Finished Plinth Level</span>
+            </div>
           </div>
         </div>
 
         <div class="amenity-card">
-          <span class="card-num">02 / FACADE</span>
-          <h3 class="card-head">Curved Balcony Cantilevers</h3>
-          <p class="card-body">Dramatic 4.80-meter structural projections across a 12.115-meter radial arc with sky-blue architectural glass and continuous brilliant white slab edges.</p>
-          <div class="card-stat">
-            <span class="val">4.80 M</span>
-            <span class="lbl">Cantilever Depth</span>
+          <img src="cloud_gpu_exterior_preview_v003.png" alt="Curved Balcony Cantilevers" class="card-thumb">
+          <div class="card-content">
+            <span class="card-num">02 / FACADE</span>
+            <h3 class="card-head">Curved Balcony Cantilevers</h3>
+            <p class="card-body">Dramatic 4.80-meter structural projections across a 12.115-meter radial arc with sky-blue architectural glass and continuous brilliant white slab edges.</p>
+            <div class="card-stat">
+              <span class="val">4.80 M</span>
+              <span class="lbl">Cantilever Depth</span>
+            </div>
           </div>
         </div>
 
         <div class="amenity-card">
-          <span class="card-num">03 / HORIZON</span>
-          <h3 class="card-head">Level 19 Sky Club & Pool</h3>
-          <p class="card-body">Sanctioned rooftop amenities featuring an 11.80m &times; 4.00m heated lap pool, natural timber sun deck, fitness pavilion, and panoramic views of Chamundi Hill.</p>
-          <div class="card-stat">
-            <span class="val">+165.50 M</span>
-            <span class="lbl">Rooftop Terrace Slab</span>
+          <img src="terrace_rooftop_render.png" alt="Rooftop Horizon Pool" class="card-thumb">
+          <div class="card-content">
+            <span class="card-num">03 / HORIZON</span>
+            <h3 class="card-head">Level 19 Sky Club & Pool</h3>
+            <p class="card-body">Sanctioned rooftop amenities featuring an 11.80m &times; 4.00m heated lap pool, natural timber sun deck, fitness pavilion, and panoramic views of Chamundi Hill.</p>
+            <div class="card-stat">
+              <span class="val">+165.50 M</span>
+              <span class="lbl">Rooftop Terrace Slab</span>
+            </div>
           </div>
         </div>
 
         <div class="amenity-card">
-          <span class="card-num">04 / ESTATES</span>
-          <h3 class="card-head">Single-Floor 4BHK Sanctuaries</h3>
-          <p class="card-body">368.06 square meters of net luxury living per typical residence. Four palatial ensuite bedrooms, private family lounge, art gallery, and service quarters.</p>
-          <div class="card-stat">
-            <span class="val">368 M&sup2;</span>
-            <span class="lbl">Net Living Area</span>
+          <img src="exterior_photo_match_render_v006.png" alt="4BHK Luxury Residences" class="card-thumb">
+          <div class="card-content">
+            <span class="card-num">04 / ESTATES</span>
+            <h3 class="card-head">Single-Floor 4BHK Sanctuaries</h3>
+            <p class="card-body">368.06 square meters of net luxury living per typical residence. Four palatial ensuite bedrooms, private family lounge, art gallery, and service quarters.</p>
+            <div class="card-stat">
+              <span class="val">368 M&sup2;</span>
+              <span class="lbl">Net Living Area</span>
+            </div>
           </div>
         </div>
       </div>
@@ -707,7 +723,7 @@
 
       <div class="gallery-showcase">
         <div class="gallery-box">
-          <img src="cloud_gpu_exterior_comparison_side_by_side_v003.png" alt="Cloud GPU Cycles Side-by-Side Comparison">
+          <img src="exterior_comparison_side_by_side_v006.png" alt="Cloud GPU Cycles Side-by-Side Comparison">
           <div class="gallery-meta">
             <h4>Certified Facade Photo-Match</h4>
             <p>Direct comparison: Approved reference photograph vs. Cloud GPU Cycles render (v003).</p>
@@ -715,7 +731,7 @@
         </div>
 
         <div class="gallery-box">
-          <img src="exterior_photo_match_render_v003.png" alt="High Resolution Photo Match Exterior Render">
+          <img src="exterior_photo_match_render_v006.png" alt="High Resolution Photo Match Exterior Render">
           <div class="gallery-meta">
             <h4>Calibrated Exterior Render</h4>
             <p>Buff sandstone beige walls, sky-blue balcony glass, and reflective window reveals.</p>
@@ -736,42 +752,50 @@
 
       <div class="grid-amenities">
         <div class="amenity-card">
-          <span class="card-num">LEVEL 01</span>
-          <h3 class="card-head">Art Gallery Residence</h3>
-          <p class="card-body">Unique single-level 4BHK residence integrated with private art exhibition gallery overlooking the double-height reception gardens.</p>
-          <div class="card-stat">
-            <span class="val">Level 01</span>
-            <span class="lbl">Ground Transition</span>
+          <div class="card-content">
+            <span class="card-num">LEVEL 01</span>
+            <h3 class="card-head">Art Gallery Residence</h3>
+            <p class="card-body">Unique single-level 4BHK residence integrated with private art exhibition gallery overlooking the double-height reception gardens.</p>
+            <div class="card-stat">
+              <span class="val">Level 01</span>
+              <span class="lbl">Ground Transition</span>
+            </div>
           </div>
         </div>
 
         <div class="amenity-card">
-          <span class="card-num">LEVELS 02–16 &amp; 18</span>
-          <h3 class="card-head">Typical 4BHK Estate</h3>
-          <p class="card-body">Sprawling open-plan living and dining with 3.05m clear ceiling heights, direct access to the 4.8m curved balcony, and master suite with walk-in dressers.</p>
-          <div class="card-stat">
-            <span class="val">3.30 M</span>
-            <span class="lbl">Floor-to-Floor Height</span>
+          <div class="card-content">
+            <span class="card-num">LEVELS 02–16 &amp; 18</span>
+            <h3 class="card-head">Typical 4BHK Estate</h3>
+            <p class="card-body">Sprawling open-plan living and dining with 3.05m clear ceiling heights, direct access to the 4.8m curved balcony, and master suite with walk-in dressers.</p>
+            <div class="card-stat">
+              <span class="val">3.30 M</span>
+              <span class="lbl">Floor-to-Floor Height</span>
+            </div>
           </div>
         </div>
 
         <div class="amenity-card">
-          <span class="card-num">LEVEL 17</span>
-          <h3 class="card-head">Sanctioned Refuge Floor</h3>
-          <p class="card-body">Mandatory municipal safety and refuge deck providing unobstructed 360-degree views, fire-safe assembly zone, and landscaped terrace.</p>
-          <div class="card-stat">
-            <span class="val">Refuge</span>
-            <span class="lbl">Life Safety Level</span>
+          <div class="card-content">
+            <span class="card-num">LEVEL 17</span>
+            <h3 class="card-head">Sanctioned Refuge Floor</h3>
+            <p class="card-body">Mandatory municipal safety and refuge deck providing unobstructed 360-degree views, fire-safe assembly zone, and landscaped terrace.</p>
+            <div class="card-stat">
+              <span class="val">Refuge</span>
+              <span class="lbl">Life Safety Level</span>
+            </div>
           </div>
         </div>
 
         <div class="amenity-card">
-          <span class="card-num">LEVEL 19 &amp; TERRACE</span>
-          <h3 class="card-head">Sky Clubhouse &amp; Deck</h3>
-          <p class="card-body">Private recreation floor featuring lap pool, steam/sauna, executive boardroom, solar water heating systems, and architectural pergola louvers.</p>
-          <div class="card-stat">
-            <span class="val">+168.50 M</span>
-            <span class="lbl">Pergola Apex</span>
+          <div class="card-content">
+            <span class="card-num">LEVEL 19 &amp; TERRACE</span>
+            <h3 class="card-head">Sky Clubhouse &amp; Deck</h3>
+            <p class="card-body">Private recreation floor featuring lap pool, steam/sauna, executive boardroom, solar water heating systems, and architectural pergola louvers.</p>
+            <div class="card-stat">
+              <span class="val">+168.50 M</span>
+              <span class="lbl">Pergola Apex</span>
+            </div>
           </div>
         </div>
       </div>
@@ -792,9 +816,9 @@
   <div class="modal-backdrop" id="modal-verify" role="dialog" aria-modal="true" aria-label="Exterior Verification Sheet">
     <div class="modal-window">
       <button class="modal-close" id="btn-close-verify" aria-label="Close dialog">&times;</button>
-      <h3 style="font-family: var(--font-display); font-size: 24px; text-transform: uppercase; margin-bottom: 8px;">Certified Facade Verification Sheet</h3>
+      <h3 style="font-size: 22px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">Certified Facade Verification Sheet</h3>
       <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 24px;">Approved reference photograph (Site No. 42 Kalidasa Road) compared against calibrated Cloud GPU Cycles 3D model.</p>
-      <img src="cloud_gpu_exterior_comparison_side_by_side_v003.png" alt="Side by Side Facade Comparison" style="width: 100%; border-radius: 8px; border: 1px solid var(--border-subtle); display: block;">
+      <img src="exterior_comparison_side_by_side_v006.png" alt="Side by Side Facade Comparison" style="width: 100%; border-radius: 8px; border: 1px solid var(--border-subtle); display: block;">
     </div>
   </div>
 
@@ -802,7 +826,7 @@
   <div class="modal-backdrop" id="modal-video" role="dialog" aria-modal="true" aria-label="Cinematic Tour Video">
     <div class="modal-window">
       <button class="modal-close" id="btn-close-video" aria-label="Close dialog">&times;</button>
-      <h3 style="font-family: var(--font-display); font-size: 24px; text-transform: uppercase; margin-bottom: 8px;">Cinematic Architectural Tour</h3>
+      <h3 style="font-size: 22px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">Cinematic Architectural Tour</h3>
       <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 24px;">Full camera path trajectory rendered via NVIDIA RTX PRO 6000 cloud GPU.</p>
       <video controls style="width: 100%; border-radius: 8px; border: 1px solid var(--border-subtle); display: block;" poster="cloud_gpu_exterior_preview_v003.png">
         <source src="camera_path_preview.mp4" type="video/mp4">
@@ -842,7 +866,7 @@
       function resizeCanvas() {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-        renderFrame(currentFrame);
+        renderFrame(Math.round(currentFrame));
       }
       window.addEventListener('resize', resizeCanvas);
 

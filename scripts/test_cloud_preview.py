@@ -65,3 +65,4 @@ if img_url:
         with open(out_img, "wb") as f:
             f.write(img_resp.read())
     print(f"Downloaded cloud GPU test render to {out_img} (Size: {os.path.getsize(out_img)} bytes)")
+

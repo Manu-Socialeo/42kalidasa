@@ -58,3 +58,4 @@ with urllib.request.urlopen(req_tools, context=ctx) as resp:
     print(f"Total tools: {len(tools)}")
     for t in tools:
         print(f" - {t['name']}: {t.get('description', '')[:80]}...")
+

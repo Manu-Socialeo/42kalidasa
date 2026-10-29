@@ -138,3 +138,4 @@
 | **MCP Integration Key & Config** | `scripts/janction_key.json`, `C:\Users\manpr\.gemini\config\mcp_config.json` |
 | **Cloud Render Automation Scripts** | `scripts/upload_blend_to_janction.py`, `scripts/janction_cloud_preview.py`, `scripts/download_cloud_preview.py` |
 | **Pre-Modification Backup Snapshot** | `backups/pre_cloud_gpu_20261029_224659/` |
+
